@@ -1,0 +1,98 @@
+@mixin flex_center ($x) {
+    display: flex;
+    flex-direction: $x;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.side-nav{
+    background-color: rgb(30, 29, 29);
+    color: white;
+    @include flex_center(column);
+    padding: 16px 16px 8px;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    bottom: 0;
+    height:100vh;
+    width: 15vw;
+    &_img_wrap{
+        @include flex_center(column);
+        .side-nav_img{
+            
+            img{
+                border-radius: 200px;
+                border: 10px solid rgb(68, 67, 67);
+                height: 160px;
+                width: 160px;
+            }
+        }
+        .name{
+            font-size: 21px;
+            font-family: "Poppins",sans-serif;
+        }
+        
+    }
+    
+    &_link_wrap{
+        .side-nav_link{
+            padding:64px 0px;
+            margin:16px 0px;
+            @include flex_center(column);
+
+            li a{
+                    display: block;
+                    padding:10px 0px;
+                    width: 15vw;
+                    text-align: center;
+                    &:hover{
+                        color:$btn_color;
+                        cursor: pointer;
+                    }
+                }
+                
+        }
+        
+    }
+    &_icon_wrapper{
+        .side-nav_icon{
+            @include flex_center(row);
+            justify-content: center;
+            margin: auto;
+            li a{   
+                    position: relative;
+                    i{
+                        margin: 5px;
+                        padding: 5px;
+                        color: white;
+                        &:hover{
+                            color: $btn_color;
+                        }
+                    }
+                    &[data-title]:hover::after {
+                        content: attr(data-title);
+                        position: absolute;
+                        top: -100%;
+                        left:50%;
+                        background-color: black;
+                        border-radius: 50px;
+                        height: 20px;
+                        width: 80px;
+                        text-align: center;
+                      }
+            }
+        }
+    }
+
+
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
