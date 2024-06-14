@@ -166,6 +166,7 @@ section:nth-child(n+1) {
 }
 section div {
   width: 100%;
+  position: relative;
 }
 section div .heading {
   text-align: center;
@@ -176,6 +177,21 @@ section div .over_heading {
   text-align: center;
   color: white;
   font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section div .underline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  background-color: #20C997;
+  border-bottom-color: #20C997;
+  height: 1px;
+  width: 80px;
 }
 section:nth-child(even) {
   background-color: rgb(36, 36, 36);
@@ -265,6 +281,7 @@ section:nth-child(2n+3) {
   font-size: 1.5em;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .what_i_do_content_individual .info .sub-head {
   color: white;

@@ -31,11 +31,9 @@ section{
     &:nth-child(n+1){
         padding:0 20vw;
     }
-
-    
-
     div{
         width: 100%;
+        position: relative;
         .heading{
             text-align: center;
             color: rgb(128, 128, 128,0.2);
@@ -45,6 +43,23 @@ section{
             text-align: center;
             color:white;
             font-size:2em;
+
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .underline{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top:20px;
+            background-color:$btn_color;
+            border-bottom-color: $btn_color;
+            height: 1px;
+            width:80px;
         }
         
     }
@@ -143,6 +158,7 @@ section{
                     font-size: 1.5em;
                     top: 50%;
                     left:50%;
+                    transform: translate(-50%, -50%);
                     
 
                 }
