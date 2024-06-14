@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+body {
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  font-family: "Poppins", sans-serif;
+}
+
 .side-nav {
   background-color: rgb(30, 29, 29);
   color: white;
@@ -100,17 +107,17 @@
   left: 15vw;
   top: 0;
   height: 100vh;
-  min-width: 85vw;
+  width: 85vw;
   -o-object-fit: fit;
      object-fit: fit;
 }
 .home .layer {
   background-color: rgba(21, 21, 21, 0.7);
   position: absolute;
-  left: 15vw;
   top: 0;
+  left: 15vw;
   height: 100vh;
-  min-width: 85vw;
+  width: 85vw;
   z-index: 0;
 }
 .home .layer .text {
@@ -144,4 +151,126 @@
   background-color: #20C997;
   color: white;
   cursor: pointer;
+}
+
+.pages {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  width: 85vw;
+}
+section:nth-child(n+1) {
+  padding: 0 20vw;
+}
+section div {
+  width: 100%;
+}
+section div .heading {
+  text-align: center;
+  color: rgba(128, 128, 128, 0.2);
+  font-size: 8em;
+}
+section div .over_heading {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+section:nth-child(even) {
+  background-color: rgb(36, 36, 36);
+}
+section:nth-child(2n+3) {
+  background-color: rgb(47, 47, 47);
+}
+
+.about_me {
+  color: white;
+}
+.about_me_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_me .intro {
+  width: 60%;
+  height: 50%;
+  font-size: 1em;
+  margin-bottom: 16px;
+}
+.about_me .intro_para1 {
+  margin-bottom: 16px;
+}
+.about_me .info_wrap {
+  width: 30%;
+  height: 50%;
+}
+.about_me .info_wrap .info {
+  padding: 10px 0;
+}
+.about_me .clr_txt {
+  color: #20C997;
+}
+.about_me .btn_cv {
+  border: 1px solid #20C997;
+  height: 70px;
+  width: 160px;
+  border-radius: 200px;
+  background-color: #20C997;
+  margin: 10px;
+  color: white;
+}
+.about_me .btn_cv:hover {
+  cursor: pointer;
+}
+.about_me .stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.about_me .stats .stat {
+  border-right: 1px dotted rgba(128, 128, 128, 0.5);
+  padding: 50px;
+}
+.about_me .stats .stat_num {
+  font-size: 3em;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.5);
+}
+
+.what_i_do_content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 12px;
+  color: white;
+}
+.what_i_do_content_individual {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  height: 20%;
+  width: 40%;
+}
+.what_i_do_content_individual .icon {
+  background-color: black;
+  border-radius: 5px;
+  height: 80px;
+  max-width: 80px;
+  margin-right: 10px;
+  position: relative;
+}
+.what_i_do_content_individual .icon i {
+  color: #20C997;
+  position: absolute;
+  font-size: 1.5em;
+  top: 50%;
+  left: 50%;
+}
+.what_i_do_content_individual .info .sub-head {
+  color: white;
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+.what_i_do_content_individual .info .txt {
+  color: rgb(128, 128, 128);
 }/*# sourceMappingURL=assignment4.css.map */

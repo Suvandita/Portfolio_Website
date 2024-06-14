@@ -1,24 +1,23 @@
 .home{
     position: relative;
+    
     img{
         position: absolute;
-
         z-index: -1;
         left:15vw;
         top:0;
         height:100vh;
-        min-width: 85vw;
+        width: 85vw;
 
         object-fit: fit;
     }
     .layer{
         background-color: rgba(21, 21, 21, 0.7);
-
         position: absolute;
-        left:15vw;
         top:0;
+        left:15vw;
         height:100vh;
-        min-width: 85vw;
+        width: 85vw;
         z-index: 0;
 
         .text{
