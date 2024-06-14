@@ -10,6 +10,49 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+section {
+  height: 100vh;
+  width: 85vw;
+}
+section:nth-child(n+1) {
+  padding: 0 20vw;
+}
+section div {
+  width: 100%;
+  position: relative;
+}
+section div .heading {
+  text-align: center;
+  color: rgba(128, 128, 128, 0.2);
+  font-size: 8em;
+}
+section div .over_heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+section div .underline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+  background-color: #20C997;
+  border-bottom-color: #20C997;
+  height: 1px;
+  width: 80px;
+}
+section:nth-child(even) {
+  background-color: rgb(36, 36, 36);
+}
+section:nth-child(2n+3) {
+  background-color: rgb(47, 47, 47);
+}
+
 .side-nav {
   background-color: rgb(30, 29, 29);
   color: white;
@@ -153,53 +196,6 @@ body {
   cursor: pointer;
 }
 
-.pages {
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  height: 100vh;
-  width: 85vw;
-}
-section:nth-child(n+1) {
-  padding: 0 20vw;
-}
-section div {
-  width: 100%;
-  position: relative;
-}
-section div .heading {
-  text-align: center;
-  color: rgba(128, 128, 128, 0.2);
-  font-size: 8em;
-}
-section div .over_heading {
-  text-align: center;
-  color: white;
-  font-size: 2em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-section div .underline {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 20px;
-  background-color: #20C997;
-  border-bottom-color: #20C997;
-  height: 1px;
-  width: 80px;
-}
-section:nth-child(even) {
-  background-color: rgb(36, 36, 36);
-}
-section:nth-child(2n+3) {
-  background-color: rgb(47, 47, 47);
-}
-
 .about_me {
   color: white;
 }
@@ -278,10 +274,10 @@ section:nth-child(2n+3) {
 .what_i_do_content_individual .icon i {
   color: #20C997;
   position: absolute;
-  font-size: 1.5em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 1.5em;
 }
 .what_i_do_content_individual .info .sub-head {
   color: white;

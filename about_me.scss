@@ -1,0 +1,56 @@
+.about_me{
+    
+    color:white;
+
+    &_content{
+        display:flex;
+        flex-wrap: wrap;
+
+    }
+    .intro{
+        width:60%;
+        height: 50%;
+        font-size: 1em;
+        margin-bottom: 16px;
+        &_para1{
+            margin-bottom: 16px;
+        }
+    }
+    .info_wrap{
+        width:30%;
+        height: 50%;
+        .info{
+            padding: 10px 0;
+        }
+        
+    }
+    .clr_txt{
+        color:$btn_color;
+    }
+    .btn_cv{
+        border:1px solid $btn_color;
+        height: 70px;
+        width: 160px;
+        border-radius:200px;
+        background-color:$btn_color;
+        margin:10px;
+        color: white;
+        &:hover{
+            cursor:pointer;
+        }
+        }
+    .stats{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .stat{
+            border-right:1px dotted rgb(128, 128, 128,0.5);
+            padding: 50px;
+            &_num{
+                font-size: 3em;
+                font-weight: bold;
+                color:rgb(128, 128, 128,0.5);
+            }
+        }
+    }
+}
