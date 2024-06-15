@@ -1,25 +1,28 @@
 .side-nav{
-    background-color: rgb(30, 29, 29);
+    background-color: #111418 ;
     color: white;
     @include flex_center(column);
     padding: 16px 16px 8px;
     position: fixed;
     z-index: 1;
-    top:0;
-    left:0;
-    bottom: 0;
-    height:100vh;
-    width: 15vw;
+    
+    height:726.4px;
+    width: 227px;
     &_img_wrap{
         @include flex_center(column);
+
         .side-nav_img{
+            margin-top:24px;
             
             img{
                 border-radius: 200px;
-                border: 10px solid rgb(68, 67, 67);
+                border: 8px solid rgb(68, 67, 67);
                 height: 160px;
                 width: 160px;
+                
             }
+            margin-bottom: 4px;
+            padding: 8px;
         }
         .name{
             font-size: 21px;
@@ -30,15 +33,16 @@
     
     &_link_wrap{
         .side-nav_link{
-            padding:64px 0px;
-            margin:16px 0px;
+            padding:16px 0px;
+            margin:60.4px 0px;
             @include flex_center(column);
 
             li a{
                     display: block;
                     padding:10px 0px;
-                    width: 15vw;
+                    width: 259px;
                     text-align: center;
+                    font-size: 16px;
                     &:hover{
                         color:$btn_color;
                         cursor: pointer;
@@ -52,31 +56,61 @@
         .side-nav_icon{
             @include flex_center(row);
             justify-content: center;
-            margin: auto;
-            li a{   
+            li {
+                .tooltip{
                     position: relative;
-                    i{
-                        margin: 5px;
-                        padding: 5px;
-                        color: white;
-                        &:hover{
-                            color: $btn_color;
+                    display: inline-block;
+                    border-bottom: 1px dotted black;
+                    margin-top: 10%;
+                }
+                .tooltiptext{
+                    width: 100px;
+                    background-color: black;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 6px;
+                    padding: 5px 0;
+                    position: absolute;
+                    z-index: 1;
+                    bottom: 150%;
+                    left: -150%;
+                    visibility: hidden;
+                }
+                
+                .tooltiptext::after{
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    border-style: solid;
+                    border-color: black transparent transparent transparent;
+                    margin-left: -5px;
+                    border-width: 5px;
+                }
+                
+                .tooltip:hover .tooltiptext{
+                    visibility: visible;
+                }
+                a{   
+                        position: relative;
+                        display: block;
+                        height:26px;
+                        width:26px;
+                        margin: 2px 0 2px 4px;
+                        i{
+                            font-size: 14px;
+                            color: white;
+                            &:hover{
+                                color: $btn_color;
+                            }
                         }
+
+             
                     }
-                    &[data-title]:hover::after {
-                        content: attr(data-title);
-                        position: absolute;
-                        top: -100%;
-                        left:50%;
-                        background-color: black;
-                        border-radius: 50px;
-                        height: 20px;
-                        width: 80px;
-                        text-align: center;
-                      }
-            }
+                }
         }
     }
+}
 
 
     ul{
@@ -86,5 +120,6 @@
         text-decoration: none;
         color: inherit;
     }
-}
-
+    
+    
+    

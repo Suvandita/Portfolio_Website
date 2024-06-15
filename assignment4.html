@@ -10,18 +10,19 @@
         <title>Suvandita</title>
     </head>
     <body>
+        <div class="main_wrapper"> 
         <nav class="side-nav">
             <ul class="wrapper">
                 <li>
                     <ul class="side-nav_img_wrap">
-                        <li class="side-nav_img"><a href="#"><img src="images/img1.jpg"></a></li>
-                        <li><a href="#" class="name">Suvandita Swaroop</a></li>
+                        <li class="side-nav_img"><img src="images/img1.jpg" href="#home"></li>
+                        <li><a href="#home" class="name">Suvandita Swaroop</a></li>
                     </ul>
                 </li>
                 <li class="side-nav_link_wrap">
                     <ul class="side-nav_link">
-                        <li><a>Home</a></li>
-                        <li><a>About Me</a></li>
+                        <li><a >Home</a></li>
+                        <li><a >About Me</a></li>
                         <li><a>What I Do</a></li>
                         <li><a>Resume</a></li>
                         <li><a>Portfolio</a></li>
@@ -31,10 +32,12 @@
                 </li>
                 <li class="side-nav_icon_wrapper">
                     <ul class="side-nav_icon">
-                        <li><a href="#" data-title="Facebook"><i class="fab fa-facebook" ></i></a></li>
-                        <li><a href="#" data-title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/suvandita-swaroop-2b30ab267/" data-title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://github.com/Suvandita?tab=repositories" data-title="GitHub"><i class="fab fa-github"></i></a></li>
+        
+                        <li><a href="#" class="tooltip"><i class="fab fa-facebook" ></i><span class="tooltiptext">Facebook</span></a></li>
+                        <li><a href="#" class="tooltip"><i class="fab fa-twitter" ></i><span class="tooltiptext">Twitter</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/suvandita-swaroop-2b30ab267/" class="tooltip"><i class="fab fa-linkedin" ></i><span class="tooltiptext">linkedin</span></a></li>
+                        <li><a href="https://github.com/Suvandita?tab=repositories" class="tooltip"><i class="fab fa-github" ></i><span class="tooltiptext">GitHub</span></a></li>
+                        
                     </ul>
                 </li>
             </ul>
@@ -42,157 +45,174 @@
         </nav>
         <div class="pages">
 
-            <section class="home"> 
-                <img src="images/home.jpg">
-                <div class="layer">
-                    <div class="text">
-                        <p class="text_welcome">Welcome</p>
-                        <p class="text_name">I am Suvandita Swaroop</p>
-                        <p class="text_dest">based in Gurgaon, Haryana</p>
-                        <button class="btn">Hire Me</button>
+            <div class="home" id="home"> 
+                <img src="images/home.jpg" class="home_image">
+                <div class="home_layer">
+                    <div class="home_layer_wrap">
+                        <div class="home_layer_wrap_text">
+                            <p class="home_layer_wrap_text_welcome">Welcome</p>
+                            <p class="home_layer_wrap_text_name">I am Suvandita Swaroop</p>
+                            <p class="home_layer_wrap_text_dest">based in Gurgaon, Haryana</p>
+                            <button class="home_layer_wrap_text_btn">Hire Me</button>
+                        </div>
                     </div>
+        
                 </div>
-            </section>
+            </div>
 
-            <section  class="about_me"> 
-                <div class="heading_wrap">
-                    <p class="heading">About Me</p>
-                    <p class="over_heading">Know Me More</p>
-                    <hr class="underline">
-                </div>
-                <div class="about_me_content">
-                    <div class="intro">
-                        <p class="intro">I am <span class="clr_txt">Suvandita Swaroop</span>, a Web Developer</p>
-                        <p class="intro_para1">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                        <p class="intro_para2">Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+            <section  class="about_me" id="about_me"> 
+                <div class="content">
+                    <div class="heading_wrap">
+                        <p class="heading">About Me</p>
+                        <p class="over_heading">Know Me More</p>
+                        <hr class="underline">
                     </div>
-                    <div class="info_wrap">
-                        <p class="info"><strong>Name:</strong> Suvandita Swaroop</p> 
-                        <hr>
-                        <p class="info"><strong>Email:</strong> <span class="clr_txt">suvanditaswaroop@gmail.com</span></p>
-                        <hr>
-                        <p class="info"><strong>Age:</strong> 19</p>
-                        <hr>
-                        <p class="info"><strong>From:</strong> Gurgaon,Haryana</p>
-                        <button class="btn_cv">Download CV</button>
+                    <div class="about_me_content">
+                        <div class="intro">
+                            <p class="intro_heading">I am <span class="clr_txt">Suvandita Swaroop</span>, a Web Developer</p>
+                            <p class="intro_para1">I help you build brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <p class="intro_para2">Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.</p>
+                        </div>
+                        <div class="info_wrap">
+                            <p class="info"><strong>Name:</strong> Suvandita Swaroop</p> 
+                            <hr>
+                            <p class="info"><strong>Email:</strong> <span class="clr_txt">suvanditaswaroop@gmail.com</span></p>
+                            <hr>
+                            <p class="info"><strong>Age:</strong> 19</p>
+                            <hr>
+                            <p class="info"><strong>From:</strong> Gurgaon,Haryana</p>
+                            <button class="btn_cv">Download CV</button>
+    
+                        </div>
+                        <div class="stats">
+                            <div class="stat">
+                                <p class="stat_num">10+</p>
+                                <p class="stat_txt">Years Experience</p>
+                            </div>
+                            <div class="stat">
+                                <p class="stat_num">250+</p>
+                                <p class="stat_txt">Happy Clients</p>
+                            </div>
+                            <div class="stat">
+                                <p class="stat_num">650+</p>
+                                <p class="stat_txt">Projects Done</p>
+                            </div>
+                            <div class="stat">
+                                <p class="stat_num">38</p>
+                                <p class="stat_txt">Get Awards</p>
+                            </div>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="stats">
-                        <div class="stat">
-                            <p class="stat_num">10+</p>
-                            <p class="stat_txt">Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <p class="stat_num">250+</p>
-                            <p class="stat_txt">Happy Clients</p>
-                        </div>
-                        <div class="stat">
-                            <p class="stat_num">650+</p>
-                            <p class="stat_txt">Projects Done</p>
-                        </div>
-                        <div class="stat">
-                            <p class="stat_num">38</p>
-                            <p class="stat_txt">Get Awards</p>
-                        </div>
-                    </div>
                 </div>
+                
             </section>
             <section class="what_i_do"> 
-                <div class="heading_wrap">
-                    <p class="heading">Services</p>
-                    <p class="over_heading">What I Do</p>
-                    <hr class="underline">
-                </div>
-                <div class="what_i_do_content">
-                    <div class="what_i_do_content_individual">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="info">
-                            <p class="sub-head">HTML</p>
-                            <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
-                        </div>
+                <div class="content">
+                    <div class="heading_wrap">
+                        <p class="heading">Services</p>
+                        <p class="over_heading">What I Do</p>
+                        <hr class="underline">
                     </div>
-                    <div class="what_i_do_content_individual">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="info">
-                            <p class="sub-head">CSS/SCSS</p>
-                            <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
-
+                    <div class="what_i_do_content">
+                        <div class="what_i_do_content_individual">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <div class="info">
+                                <p class="sub-head">HTML</p>
+                                <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="what_i_do_content_individual">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="info">
-                            <p class="sub-head">JavaScript</p>
-                            <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
-
+                        <div class="what_i_do_content_individual">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <div class="info">
+                                <p class="sub-head">CSS/SCSS</p>
+                                <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
+    
+                            </div>
                         </div>
-                    </div>
-                    <div class="what_i_do_content_individual">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="info">
-                            <p class="sub-head">Python</p>
-                            <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
-
+                        <div class="what_i_do_content_individual">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <div class="info">
+                                <p class="sub-head">JavaScript</p>
+                                <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
+    
+                            </div>
                         </div>
-                    </div>
-                    <div class="what_i_do_content_individual">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="info">
-                            <p class="sub-head">C/C++</p>
-                            <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
-
+                        <div class="what_i_do_content_individual">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <div class="info">
+                                <p class="sub-head">Python</p>
+                                <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
+    
+                            </div>
                         </div>
-                    </div>
-                    <div class="what_i_do_content_individual">
-                        <div class="icon"><i class="fas fa-desktop"></i></div>
-                        <div class="info">
-                            <p class="sub-head">Java</p>
-                            <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
-
+                        <div class="what_i_do_content_individual">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <div class="info">
+                                <p class="sub-head">C/C++</p>
+                                <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
+    
+                            </div>
                         </div>
+                        <div class="what_i_do_content_individual">
+                            <div class="icon"><i class="fas fa-desktop"></i></div>
+                            <div class="info">
+                                <p class="sub-head">Java</p>
+                                <p class="txt">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Web Design Lisque persius interesset his et, in quot quidam </p>
+    
+                            </div>
+                            
+                        </div>
+    
                         
                     </div>
 
-                    
                 </div>
+                
             </section>
 
             <section  class="resume">
-                <div class="heading_wrap">
-                    <p class="heading">Summary</p>
-                    <p class="over_heading">Resume</p>
-                    <hr class="underline">
+                <div class="content">
+                    <div class="heading_wrap">
+                        <p class="heading">Summary</p>
+                        <p class="over_heading">Resume</p>
+                        <hr class="underline">
+                    </div>
                 </div>
             </section>
 
             <section class="portfolio"> 
-                <div class="heading_wrap">
-                    <p class="heading">Portfolio</p>
-                    <p class="over_heading">My work</p>
-                    <hr class="underline">
+                <div class="content">
+                    <div class="heading_wrap">
+                        <p class="heading">Portfolio</p>
+                        <p class="over_heading">My work</p>
+                        <hr class="underline">
+                    </div>
                 </div>
             </section>
 
             <section  class="testimonial"> 
-                <div class="heading_wrap">
-                    <p class="heading">Testimonial</p>
-                    <p class="over_heading">Client Speak</p>
-                    <hr class="underline">
+                <div class="content">
+                    <div class="heading_wrap">
+                        <p class="heading">Testimonial</p>
+                        <p class="over_heading">Client Speak</p>
+                        <hr class="underline">
+                    </div>
                 </div>
             </section>
-            
+
             <section  class="contact"> 
-                <div class="heading_wrap">
-                    <p class="heading">Contact</p>
-                    <p class="over_heading">Get in Touch</p>
-                    <hr class="underline">
-                </div>
+                <div class="content">
+                    <div class="heading_wrap">
+                        <p class="heading">Contact</p>
+                        <p class="over_heading">Get in Touch</p>
+                        <hr class="underline">
+                    </div>
+            </div>
 
             </section>
-            <footer>
-
-            </footer>
         </div>
+    </div>
     </body>
 
 

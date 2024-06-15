@@ -10,51 +10,64 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.main_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages {
+  margin-left: 244px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 section {
-  height: 100vh;
-  width: 85vw;
+  width: 100%;
+  height: 100%;
 }
-section:nth-child(n+1) {
-  padding: 0 20vw;
+section .content {
+  padding: 72px 48px;
 }
-section div {
+section .content div {
   width: 100%;
   position: relative;
 }
-section div .heading {
+section .content div .heading {
   text-align: center;
-  color: rgba(128, 128, 128, 0.2);
-  font-size: 8em;
+  color: rgba(108, 117, 125, 0.1);
+  font-size: 118.694px;
 }
-section div .over_heading {
+section .content div .over_heading {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  font-size: 2em;
+  font-size: 36px;
 }
-section div .underline {
+section .content div .underline {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 20px;
-  background-color: #20C997;
-  border-bottom-color: #20C997;
+  background-color: rgb(32, 201, 151);
+  border-bottom-color: rgb(32, 201, 151);
   height: 1px;
   width: 80px;
 }
 section:nth-child(even) {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(33, 37, 41);
 }
 section:nth-child(2n+3) {
-  background-color: rgb(47, 47, 47);
+  background-color: rgb(52, 58, 64);
 }
 
 .side-nav {
-  background-color: rgb(30, 29, 29);
+  background-color: #111418;
   color: white;
   display: flex;
   flex-direction: column;
@@ -63,11 +76,8 @@ section:nth-child(2n+3) {
   padding: 16px 16px 8px;
   position: fixed;
   z-index: 1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100vh;
-  width: 15vw;
+  height: 726.4px;
+  width: 227px;
 }
 .side-nav_img_wrap {
   display: flex;
@@ -75,9 +85,14 @@ section:nth-child(2n+3) {
   align-items: center;
   justify-content: center;
 }
+.side-nav_img_wrap .side-nav_img {
+  margin-top: 24px;
+  margin-bottom: 4px;
+  padding: 8px;
+}
 .side-nav_img_wrap .side-nav_img img {
   border-radius: 200px;
-  border: 10px solid rgb(68, 67, 67);
+  border: 8px solid rgb(68, 67, 67);
   height: 160px;
   width: 160px;
 }
@@ -86,8 +101,8 @@ section:nth-child(2n+3) {
   font-family: "Poppins", sans-serif;
 }
 .side-nav_link_wrap .side-nav_link {
-  padding: 64px 0px;
-  margin: 16px 0px;
+  padding: 16px 0px;
+  margin: 60.4px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,11 +111,12 @@ section:nth-child(2n+3) {
 .side-nav_link_wrap .side-nav_link li a {
   display: block;
   padding: 10px 0px;
-  width: 15vw;
+  width: 259px;
   text-align: center;
+  font-size: 16px;
 }
 .side-nav_link_wrap .side-nav_link li a:hover {
-  color: #20C997;
+  color: rgb(32, 201, 151);
   cursor: pointer;
 }
 .side-nav_icon_wrapper .side-nav_icon {
@@ -109,89 +125,120 @@ section:nth-child(2n+3) {
   align-items: center;
   justify-content: center;
   justify-content: center;
-  margin: auto;
+}
+.side-nav_icon_wrapper .side-nav_icon li .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-top: 10%;
+}
+.side-nav_icon_wrapper .side-nav_icon li .tooltiptext {
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: -150%;
+  visibility: hidden;
+}
+.side-nav_icon_wrapper .side-nav_icon li .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  margin-left: -5px;
+  border-width: 5px;
+}
+.side-nav_icon_wrapper .side-nav_icon li .tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 .side-nav_icon_wrapper .side-nav_icon li a {
   position: relative;
+  display: block;
+  height: 26px;
+  width: 26px;
+  margin: 2px 0 2px 4px;
 }
 .side-nav_icon_wrapper .side-nav_icon li a i {
-  margin: 5px;
-  padding: 5px;
+  font-size: 14px;
   color: white;
 }
 .side-nav_icon_wrapper .side-nav_icon li a i:hover {
-  color: #20C997;
+  color: rgb(32, 201, 151);
 }
-.side-nav_icon_wrapper .side-nav_icon li a[data-title]:hover::after {
-  content: attr(data-title);
-  position: absolute;
-  top: -100%;
-  left: 50%;
-  background-color: black;
-  border-radius: 50px;
-  height: 20px;
-  width: 80px;
-  text-align: center;
-}
-.side-nav ul {
+
+ul {
   list-style-type: none;
 }
-.side-nav a {
+
+a {
   text-decoration: none;
   color: inherit;
 }
 
 .home {
   position: relative;
+  height: 100vh;
+  width: 100%;
 }
-.home img {
+.home_image {
   position: absolute;
   z-index: -1;
-  left: 15vw;
-  top: 0;
-  height: 100vh;
-  width: 85vw;
+  width: 100%;
+  height: 100%;
   -o-object-fit: fit;
      object-fit: fit;
 }
-.home .layer {
+.home_layer {
   background-color: rgba(21, 21, 21, 0.7);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0;
-  left: 15vw;
-  height: 100vh;
-  width: 85vw;
   z-index: 0;
 }
-.home .layer .text {
+.home_layer_wrap {
+  padding: 72px 0;
+}
+.home_layer_wrap_text {
   color: white;
-  position: absolute;
-  top: 30%;
-  text-align: center;
+  padding: 0 12px;
   width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.home .layer .text_welcome {
-  font-size: 2em;
+.home_layer_wrap_text_welcome {
+  font-size: 28px;
+  margin: 0 0 16px 0;
+}
+.home_layer_wrap_text_name {
+  font-size: 51.9616px;
   margin-bottom: 16px;
 }
-.home .layer .text_name {
-  font-size: 5em;
-  margin-bottom: 16px;
+.home_layer_wrap_text_dest {
+  font-size: 21px;
+  margin: 0 0 24px 0;
 }
-.home .layer .text_dest {
-  font-size: 1.5em;
-  margin-bottom: 24px;
-}
-.home .layer .text .btn {
-  border: 1px solid #20C997;
-  color: #20C997;
+.home_layer_wrap_text_btn {
+  border: 1px solid rgb(32, 201, 151);
+  font-size: 16px;
+  margin: 8px 0 0;
+  color: rgb(32, 201, 151);
   height: 70px;
   width: 160px;
   border-radius: 200px;
   background-color: rgba(21, 21, 21, 0);
 }
-.home .layer .text .btn:hover {
-  background-color: #20C997;
+.home_layer_wrap_text_btn:hover {
+  background-color: rgb(32, 201, 151);
   color: white;
   cursor: pointer;
 }
@@ -206,28 +253,34 @@ section:nth-child(2n+3) {
 .about_me .intro {
   width: 60%;
   height: 50%;
-  font-size: 1em;
   margin-bottom: 16px;
 }
-.about_me .intro_para1 {
+.about_me .intro_heading {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+.about_me .intro_para1, .about_me .intro_para2 {
+  font-size: 16px;
   margin-bottom: 16px;
 }
 .about_me .info_wrap {
   width: 30%;
   height: 50%;
+  padding-left: 24px;
+  margin-top: 48px;
 }
 .about_me .info_wrap .info {
-  padding: 10px 0;
+  padding: 12px 0;
 }
 .about_me .clr_txt {
-  color: #20C997;
+  color: rgb(32, 201, 151);
 }
 .about_me .btn_cv {
-  border: 1px solid #20C997;
+  border: 1px solid rgb(32, 201, 151);
   height: 70px;
   width: 160px;
   border-radius: 200px;
-  background-color: #20C997;
+  background-color: rgb(32, 201, 151);
   margin: 10px;
   color: white;
 }
@@ -241,49 +294,53 @@ section:nth-child(2n+3) {
 }
 .about_me .stats .stat {
   border-right: 1px dotted rgba(128, 128, 128, 0.5);
-  padding: 50px;
+  padding: 20px 12px;
+  font-size: 16px;
 }
 .about_me .stats .stat_num {
-  font-size: 3em;
+  font-size: 45px;
   font-weight: bold;
   color: rgba(128, 128, 128, 0.5);
 }
 
+.what_i_do {
+  max-height: 100%;
+}
 .what_i_do_content {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 12px;
   color: white;
 }
 .what_i_do_content_individual {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  height: 20%;
-  width: 40%;
+  padding: 0 12px;
+  margin-bottom: 48px;
+  max-width: 40%;
+  padding-left: 90px;
 }
 .what_i_do_content_individual .icon {
-  background-color: black;
+  background-color: rgb(33, 37, 41);
   border-radius: 5px;
-  height: 80px;
-  max-width: 80px;
+  height: 70px;
+  max-width: 70px;
   margin-right: 10px;
   position: relative;
 }
 .what_i_do_content_individual .icon i {
-  color: #20C997;
+  color: rgb(32, 201, 151);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5em;
+  font-size: 30px;
 }
 .what_i_do_content_individual .info .sub-head {
   color: white;
-  font-size: 1.25em;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 16px;
 }
 .what_i_do_content_individual .info .txt {
-  color: rgb(128, 128, 128);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
 }/*# sourceMappingURL=assignment4.css.map */

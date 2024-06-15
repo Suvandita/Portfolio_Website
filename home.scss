@@ -1,59 +1,65 @@
 .home{
     position: relative;
+    height: 100vh;
+    width: 100%;
     
-    img{
+    &_image{
         position: absolute;
         z-index: -1;
-        left:15vw;
-        top:0;
-        height:100vh;
-        width: 85vw;
-
+        width: 100%;
+        height: 100%;
         object-fit: fit;
     }
-    .layer{
+    
+    &_layer{
         background-color: rgba(21, 21, 21, 0.7);
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top:0;
-        left:15vw;
-        height:100vh;
-        width: 85vw;
         z-index: 0;
 
-        .text{
-            color: white;
-            position: absolute;
-            top:30%;
-            text-align: center;
-            width: 100%;
+        &_wrap{
+            padding: 72px 0;
 
-            
-            &_welcome{
-                font-size: 2em;
-                margin-bottom: 16px;
-                
-            }
-            &_name{
-                font-size: 5em;
-                margin-bottom: 16px;
-            }
-            &_dest{
-                font-size: 1.5em;
-                margin-bottom: 24px;
-            }
-            .btn{
-            border:1px solid $btn_color;
-            color:$btn_color;
-            height: 70px;
-            width: 160px;
-            border-radius:200px;
-            background-color: rgba(21, 21, 21, 0.0);
-            &:hover{
-                background-color:$btn_color;
+            &_text{
                 color: white;
-                cursor:pointer;
-            }
-            }
-    }
-}
+                padding:0 12px;
+                width: 100%;
+                @include position_center();
+                text-align: center;
+                
+                &_welcome{
+                    font-size: 28px;
+                    margin:0 0 16px 0;
+                    
+                }
+
+                &_name{
+                    font-size: 51.9616px;
+                    margin-bottom: 16px;
+                }
+
+                &_dest{
+                    font-size: 21px;
+                    margin: 0 0 24px 0;
+                }
+
+                &_btn{
+                    border:1px solid $btn_color;
+                    font-size:  16px;
+                    margin: 8px 0 0; 
+                    color:$btn_color;
+                    height: 70px;
+                    width: 160px;
+                    border-radius:200px;
+                    background-color: rgba(21, 21, 21, 0.0);
+                    &:hover{
+                        background-color:$btn_color;
+                        color: white;
+                        cursor:pointer;
+                    }
+                }
+            }            
+        }
+    } 
 }

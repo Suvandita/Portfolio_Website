@@ -10,17 +10,24 @@
     .intro{
         width:60%;
         height: 50%;
-        font-size: 1em;
         margin-bottom: 16px;
-        &_para1{
+        &_heading{
+            font-size: 28px;
             margin-bottom: 16px;
         }
+        &_para1,&_para2{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        
     }
     .info_wrap{
         width:30%;
         height: 50%;
+        padding-left:24px;
+        margin-top:48px;
         .info{
-            padding: 10px 0;
+            padding: 12px 0;
         }
         
     }
@@ -45,9 +52,10 @@
         justify-content: space-evenly;
         .stat{
             border-right:1px dotted rgb(128, 128, 128,0.5);
-            padding: 50px;
+            padding: 20px 12px;
+            font-size: 16px;
             &_num{
-                font-size: 3em;
+                font-size: 45px;
                 font-weight: bold;
                 color:rgb(128, 128, 128,0.5);
             }
