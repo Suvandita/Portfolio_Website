@@ -1,16 +1,18 @@
 .what_i_do{
-    max-height: 100%;
+    margin:0 12px;
+    max-height:50%;
     &_content{
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         color:white;
         &_individual{
+            
             display: flex;
             flex-direction: row;
             padding:0 12px;
             margin-bottom: 48px;
             max-width:40%;
-            padding-left: 90px;
             
             
             .icon{
@@ -27,6 +29,7 @@
                 }
             }
             .info{
+                padding-left: 20px;
                 .sub-head{
                     color:white;
                     font-size: 20px;
