@@ -258,4 +258,40 @@ section{
     }
 } 
 
+.cards{
+    display:flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding:20px 0;
+    width:100%;
+    .card{
+        display:flex;
+        flex-direction:column;
+        background-color: rgb(17, 20, 24);
+        padding: 48px;
+        margin-left:25px;
+        min-width: 40%;
+        &_details{
+            display:flex;
+            flex-direction: row;
+            margin-bottom: 24px;
+            img{
+                height: 65px;
+                width:65px;
+                border-radius: 200px;
+            }
+            p{
+                color:white;
+                margin-left:16px;
+            }
+        }
+        &_info{
+            color:white;
+            margin-bottom: 24px;
+        }
+        &_star{
+            color:gold;
+        }
+    }
+}
        
