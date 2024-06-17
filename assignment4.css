@@ -16,7 +16,7 @@ body {
 }
 
 .pages {
-  margin-left: 244px;
+  margin: 0 0 0 244px;
   height: 100%;
   width: 100%;
   display: flex;
@@ -52,7 +52,7 @@ section .content div .underline {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-top: 20px;
+  margin: 20px 0 0;
   background-color: rgb(32, 201, 151);
   border-bottom-color: rgb(32, 201, 151);
   height: 1px;
@@ -491,16 +491,18 @@ a {
   text-align: center;
 }
 .resume_content3_btn {
-  border: 1px solid rgb(32, 201, 151);
-  height: 100px;
-  width: 160px;
-  border-radius: 200px;
-  background-color: rgb(32, 201, 151);
-  margin: 100px;
-  color: white;
+  border: 1.6px solid rgb(108, 117, 125);
+  padding: 12.8px 41.6px;
+  border-radius: 800px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 48px;
+  color: rgb(108, 117, 125);
+  font-size: 16px;
 }
 .resume_content3_btn:hover {
   cursor: pointer;
+  background-color: rgb(108, 117, 125);
+  color: white;
 }
 
 .cards {
@@ -538,4 +540,188 @@ a {
 }
 .cards .card_star {
   color: gold;
+}
+
+.contact {
+  width: 100%;
+}
+.contact_content {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  width: 100%;
+}
+.contact_content_address {
+  width: 25%;
+  display: flex;
+  padding: 0 12px;
+  margin: 48px 0 0;
+  flex-direction: column;
+}
+.contact_content_address_title {
+  font-size: 21px;
+  margin: 0 0 16px;
+}
+.contact_content_address_info {
+  font-size: 16px;
+  margin: 0 0 24px;
+}
+.contact_content_address_contacts {
+  margin: 0 0 20px;
+}
+.contact_content_address_contacts p {
+  display: block;
+  font-size: 16px;
+  color: rgb(32, 201, 151);
+  margin: 0 0 4px;
+}
+.contact_content_address_contacts p span a {
+  margin: 0 8px 0 0;
+}
+.contact_content_address_contacts p span a i {
+  font-size: 18px;
+  color: rgb(32, 201, 151);
+}
+.contact_content_address_contacts p span a i:hover {
+  cursor: pointer;
+}
+.contact_content_address_follow {
+  font-size: 21px;
+  margin: 0 0 16px;
+}
+.contact_content_address_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.contact_content_address_icon li .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin: 10% 0 0;
+}
+.contact_content_address_icon li .tooltiptext {
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: -150%;
+  visibility: hidden;
+}
+.contact_content_address_icon li .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+  margin: 0 0 0 -5px;
+  border-width: 5px;
+}
+.contact_content_address_icon li .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.contact_content_address_icon li a {
+  position: relative;
+  display: block;
+  height: 26px;
+  width: 26px;
+  margin: 2px 0 2px 4px;
+}
+.contact_content_address_icon li a i {
+  font-size: 14px;
+  color: rgb(170, 177, 184);
+}
+.contact_content_address_icon li a i:hover {
+  color: rgb(32, 201, 151);
+}
+.contact_content_note {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 48px 0 0;
+  padding: 0 12px;
+  width: 100%;
+}
+.contact_content_note_heading {
+  font-size: 21px;
+  margin: 0 0 16px;
+  width: 100%;
+}
+.contact_content_note_input1 {
+  display: flex;
+  flex-direction: row;
+}
+.contact_content_note_input1_name {
+  padding: 0 12px;
+  margin: 24px 0 0;
+  width: 50%;
+}
+.contact_content_note_input1_name input {
+  padding: 12.96px 15.36px;
+  background-color: rgb(35, 42, 49);
+  border: 0.8px solid rgb(35, 42, 49);
+  border-radius: 6px;
+  width: 100%;
+}
+.contact_content_note_input1_email {
+  padding: 0 12px;
+  margin: 24px 0 0;
+  width: 50%;
+}
+.contact_content_note_input1_email input {
+  padding: 12.96px 15.36px;
+  background-color: rgb(35, 42, 49);
+  border: 0.8px solid rgb(35, 42, 49);
+  border-radius: 6px;
+  width: 100%;
+}
+.contact_content_note_input2 {
+  padding: 0 12px;
+  margin: 24px 0 0;
+  width: 100%;
+}
+.contact_content_note_input2 textarea {
+  padding: 12.96px 15.36px;
+  background-color: rgb(35, 42, 49);
+  border: 0.8px solid rgb(35, 42, 49);
+  border-radius: 6px;
+  width: 100%;
+}
+.contact_content_note_input3_send {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.6px solid rgb(32, 201, 151);
+  padding: 12.8px 41.6px;
+  border-radius: 800px;
+  background-color: rgb(32, 201, 151);
+  margin-top: 48px;
+  color: white;
+  font-size: 16px;
+}
+.contact_content_note_input3_send:hover {
+  cursor: pointer;
+}
+
+.portfolio_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin: 0 0 48px;
+  color: rgb(221, 221, 221);
+}
+.portfolio_nav a {
+  padding: 9.6px 16px;
+}
+.portfolio_nav a:hover {
+  cursor: pointer;
+  color: rgb(32, 201, 151);
 }/*# sourceMappingURL=assignment4.css.map */
