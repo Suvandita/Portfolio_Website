@@ -30,16 +30,16 @@ section {
 section .content {
   padding: 72px 48px;
 }
-section .content div {
+section .content .heading_wrap {
   position: relative;
 }
-section .content div .heading {
+section .content .heading_wrap .heading {
   text-align: center;
   color: rgba(108, 117, 125, 0.1);
   font-size: 118.694px;
   font-weight: 600;
 }
-section .content div .over_heading {
+section .content .heading_wrap .over_heading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,7 +49,7 @@ section .content div .over_heading {
   font-size: 36px;
   font-weight: 600;
 }
-section .content div .underline {
+section .content .heading_wrap .underline {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -659,11 +659,12 @@ a {
 .contact_content_note_input1 {
   display: flex;
   flex-direction: row;
+  gap: 5px;
 }
 .contact_content_note_input1_name {
   padding: 0 12px;
   margin: 24px 0 0;
-  width: 50%;
+  /*width: 50%;*/
 }
 .contact_content_note_input1_name input {
   padding: 12.96px 15.36px;
@@ -675,7 +676,7 @@ a {
 .contact_content_note_input1_email {
   padding: 0 12px;
   margin: 24px 0 0;
-  width: 50%;
+  /*width: 50%;*/
 }
 .contact_content_note_input1_email input {
   padding: 12.96px 15.36px;
