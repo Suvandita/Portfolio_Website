@@ -37,6 +37,7 @@ section .content div .heading {
   text-align: center;
   color: rgba(108, 117, 125, 0.1);
   font-size: 118.694px;
+  font-weight: 600;
 }
 section .content div .over_heading {
   position: absolute;
@@ -46,6 +47,7 @@ section .content div .over_heading {
   text-align: center;
   color: white;
   font-size: 36px;
+  font-weight: 600;
 }
 section .content div .underline {
   position: absolute;

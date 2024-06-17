@@ -46,12 +46,14 @@ section{
                 text-align: center;
                 color: rgb(108, 117, 125,0.1);
                 font-size:118.694px;
+                font-weight: 600;
             }
             .over_heading{
                 @include position_center();
                 text-align: center;
                 color:white;
                 font-size:36px;
+                font-weight: 600;
                 
             }
             .underline{
