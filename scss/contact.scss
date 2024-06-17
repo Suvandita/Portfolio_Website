@@ -1,4 +1,4 @@
-
+@import "./scss/var_mixin";
 .contact{
     width:100%;
     &_content{
@@ -119,11 +119,12 @@
             &_input1{
                 display: flex;
                 flex-direction: row;
-                gap:5px;
+                gap:20px;
                 &_name{
+                    display: block;
                     padding:0 12px;
                     margin:24px 0 0;
-                    /*width: 50%;*/
+                    width: 50%;
                     input{
                         padding:12.96px 15.360px;
                         background-color:rgb(35,42,49) ;
@@ -135,9 +136,10 @@
 
                 }
                 &_email{
+                    display: block;
                     padding:0 12px;
                     margin:24px 0 0;
-                    /*width: 50%;*/
+                    width: 50%;
                     input{
                         padding:12.96px 15.360px;
                         background-color:rgb(35,42,49) ;

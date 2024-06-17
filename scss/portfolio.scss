@@ -1,0 +1,16 @@
+@import "./scss/var_mixin";
+.portfolio{
+    &_nav{
+        @include flex_center(row);
+        font-size: 16px;
+        margin:0 0 48px;
+        color:rgb(221, 221, 221);
+        a{
+            padding:9.6px 16px;
+            &:hover{
+                cursor: pointer;
+                color:$btn_color;
+            }
+        }
+    }
+}

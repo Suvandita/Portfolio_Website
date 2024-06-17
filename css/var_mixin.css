@@ -1,0 +1,72 @@
+/*base,functions and variable file*/
+/*variables*/
+/*mixins*/
+/*Base*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.main_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages {
+  margin: 0 0 0 244px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  max-width: 100%;
+  max-height: 100%;
+}
+section .content {
+  padding: 72px 48px;
+}
+section .content .heading_wrap {
+  position: relative;
+}
+section .content .heading_wrap .heading {
+  text-align: center;
+  color: rgba(108, 117, 125, 0.1);
+  font-size: 118.694px;
+  font-weight: 600;
+}
+section .content .heading_wrap .over_heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+section .content .heading_wrap .underline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 20px 0 0;
+  background-color: rgb(32, 201, 151);
+  border-bottom-color: rgb(32, 201, 151);
+  height: 1px;
+  width: 80px;
+}
+section:nth-child(even) {
+  background-color: rgb(33, 37, 41);
+}
+section:nth-child(2n+3) {
+  background-color: rgb(52, 58, 64);
+}/*# sourceMappingURL=var_mixin.css.map */
