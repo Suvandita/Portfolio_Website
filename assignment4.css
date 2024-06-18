@@ -267,10 +267,12 @@ a {
   width: 30%;
   height: 50%;
   padding-left: 24px;
-  margin-top: 48px;
 }
 .about_me .info_wrap .info {
   padding: 12px 0;
+}
+.about_me .info_wrap hr {
+  color: rgba(128, 128, 128, 0.5);
 }
 .about_me .clr_txt {
   color: rgb(32, 201, 151);
@@ -295,7 +297,7 @@ a {
 }
 .about_me .stats .stat {
   border-right: 1px dotted rgba(128, 128, 128, 0.5);
-  padding: 20px 12px;
+  padding: 20px 79px;
   font-size: 16px;
 }
 .about_me .stats .stat_num {
@@ -313,23 +315,28 @@ a {
   display: flex;
   flex-wrap: wrap;
   color: white;
+  margin-left: 48px;
+  margin-right: 48px;
 }
-.what_i_do_content_individual {
+.what_i_do_content .wrap {
+  display: block;
+  width: 50%;
+}
+.what_i_do_content .wrap .what_i_do_content_individual {
   display: flex;
   flex-direction: row;
   padding: 0 12px;
   margin-bottom: 48px;
-  max-width: 40%;
 }
-.what_i_do_content_individual_icon {
+.what_i_do_content .wrap .what_i_do_content_individual_icon {
   background-color: rgb(33, 37, 41);
   border-radius: 5px;
   height: 70px;
-  max-width: 70px;
+  min-width: 70px;
   margin-right: 10px;
   position: relative;
 }
-.what_i_do_content_individual_icon i {
+.what_i_do_content .wrap .what_i_do_content_individual_icon i {
   color: rgb(32, 201, 151);
   position: absolute;
   top: 50%;
@@ -337,15 +344,15 @@ a {
   transform: translate(-50%, -50%);
   font-size: 30px;
 }
-.what_i_do_content_individual_info {
+.what_i_do_content .wrap .what_i_do_content_individual_info {
   padding-left: 20px;
 }
-.what_i_do_content_individual_info .sub-head {
+.what_i_do_content .wrap .what_i_do_content_individual_info .sub-head {
   color: white;
   font-size: 20px;
   margin-bottom: 16px;
 }
-.what_i_do_content_individual_info .txt {
+.what_i_do_content .wrap .what_i_do_content_individual_info .txt {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -434,11 +441,6 @@ a {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
 }
-.resume_content2_myskills_heading {
-  margin: 24px 0;
-  font-size: 24px;
-  color: white;
-}
 .resume_content2_myskills {
   display: flex;
   flex-direction: row;
@@ -448,6 +450,12 @@ a {
   flex-direction: column;
   padding: 0 24px;
   width: 50%;
+  margin-top: 24px;
+}
+.resume_content2_myskills1_heading {
+  margin-left: 24px;
+  font-size: 24px;
+  color: white;
 }
 .resume_content2_myskills1_1, .resume_content2_myskills1_2, .resume_content2_myskills1_3 {
   color: white;
@@ -470,6 +478,7 @@ a {
   flex-direction: column;
   padding: 0 24px;
   width: 50%;
+  margin-top: 60px;
 }
 .resume_content2_myskills2_1, .resume_content2_myskills2_2, .resume_content2_myskills2_3 {
   color: white;
@@ -510,6 +519,7 @@ a {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  scrollbar-width: none;
   padding: 20px 0;
   width: 100%;
 }
@@ -561,20 +571,20 @@ a {
 }
 .contact_content_address_title {
   font-size: 21px;
-  margin: 0 0 16px;
+  margin: 0 0 24px;
 }
 .contact_content_address_info {
   font-size: 16px;
   margin: 0 0 24px;
 }
 .contact_content_address_contacts {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 }
 .contact_content_address_contacts p {
   display: block;
   font-size: 16px;
   color: rgb(32, 201, 151);
-  margin: 0 0 4px;
+  margin: 0 0 16px;
 }
 .contact_content_address_contacts p span a {
   margin: 0 8px 0 0;
@@ -586,20 +596,25 @@ a {
 .contact_content_address_contacts p span a i:hover {
   cursor: pointer;
 }
-.contact_content_address_follow {
-  font-size: 21px;
-  margin: 0 0 16px;
-}
 .contact_content_address_icon {
+  position: relative;
+}
+.contact_content_address_icon__follow {
+  font-size: 21px;
+  margin: 0 0 24px;
+}
+.contact_content_address_icon ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  left: 0;
 }
-.contact_content_address_icon li .tooltip {
+.contact_content_address_icon ul li .tooltip {
   position: relative;
 }
-.contact_content_address_icon li .tooltip .tooltiptext {
+.contact_content_address_icon ul li .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
   background-color: black;
@@ -613,7 +628,7 @@ a {
   left: 50%;
   margin-left: -60px;
 }
-.contact_content_address_icon li .tooltip .tooltiptext::after {
+.contact_content_address_icon ul li .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -623,62 +638,59 @@ a {
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
-.contact_content_address_icon li .tooltip:hover .tooltiptext {
+.contact_content_address_icon ul li .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-.contact_content_address_icon li a {
+.contact_content_address_icon ul li a {
   position: relative;
   display: block;
   height: 26px;
   width: 26px;
-  margin: 2px 0 2px 4px;
+  margin: 2px 0 2px 0;
 }
-.contact_content_address_icon li a i {
+.contact_content_address_icon ul li a i {
   font-size: 14px;
   color: rgb(170, 177, 184);
 }
-.contact_content_address_icon li a i:hover {
+.contact_content_address_icon ul li a i:hover {
   color: rgb(32, 201, 151);
 }
 .contact_content_note {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 48px 0 0;
-  padding: 0 12px;
   width: 100%;
 }
 .contact_content_note_heading {
+  display: block;
   font-size: 21px;
-  margin: 0 0 16px;
+  margin: 0 0 24px;
   width: 100%;
 }
 .contact_content_note_input1 {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  margin: 0 0 24px;
+  gap: 50px;
 }
 .contact_content_note_input1_name {
   display: block;
-  padding: 0 12px;
-  margin: 24px 0 0;
   width: 50%;
 }
 .contact_content_note_input1_name input {
-  padding: 12.96px 15.36px;
+  padding: 12.96px 0 12.96px 5px;
   background-color: rgb(35, 42, 49);
   border: 0.8px solid rgb(35, 42, 49);
   border-radius: 6px;
   width: 100%;
+  margin-right: 20px;
 }
 .contact_content_note_input1_email {
   display: block;
-  padding: 0 12px;
-  margin: 24px 0 0;
   width: 50%;
 }
 .contact_content_note_input1_email input {
-  padding: 12.96px 15.36px;
+  padding: 12.96px 0 12.96px 5px;
   background-color: rgb(35, 42, 49);
   border: 0.8px solid rgb(35, 42, 49);
   border-radius: 6px;
@@ -686,13 +698,12 @@ a {
 }
 .contact_content_note_input2 {
   display: block;
-  padding: 0 12px;
-  margin: 24px 0 0;
+  margin: 0 0 24px;
   width: 100%;
   height: 30%;
 }
 .contact_content_note_input2 textarea {
-  padding: 12.96px 15.36px;
+  padding: 12.96px 0 12.96px 5px;
   background-color: rgb(35, 42, 49);
   border: 0.8px solid rgb(35, 42, 49);
   border-radius: 6px;
@@ -700,14 +711,13 @@ a {
   height: 100%;
 }
 .contact_content_note_input3_send {
+  display: block;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 24px auto 0 auto;
   border: 1.6px solid rgb(32, 201, 151);
   padding: 12.8px 41.6px;
   border-radius: 800px;
   background-color: rgb(32, 201, 151);
-  margin-top: 36px;
   color: white;
   font-size: 16px;
 }
@@ -724,12 +734,12 @@ a {
   margin: 0 0 48px;
   color: rgb(221, 221, 221);
 }
-.portfolio_nav a:nth-child(0) {
-  color: rgb(32, 201, 151);
-  text-decoration: underline;
-}
 .portfolio_nav a {
   padding: 9.6px 16px;
+}
+.portfolio_nav a:nth-child(1) {
+  color: rgb(32, 201, 151);
+  text-decoration: underline;
 }
 .portfolio_nav a:hover {
   cursor: pointer;
@@ -817,14 +827,9 @@ a {
   width: 50%;
 }
 .footer .content .footer_content_right1 {
-  border-right: 1px solid white;
   padding: 8px 16px 8px 0;
-}
-.footer .content .footer_content_right_vr {
-  display: block;
-  color: rgba(250, 250, 250, 0.8);
-  font-size: 10px;
-  width: 1px;
+  border-right: 1px solid rgba(250, 250, 250, 0.8);
+  height: 5px;
 }
 .footer .content .footer_content_right2 {
   padding: 8px 0 8px 16px;

@@ -24,14 +24,9 @@
   width: 50%;
 }
 .footer .content .footer_content_right1 {
-  border-right: 1px solid white;
   padding: 8px 16px 8px 0;
-}
-.footer .content .footer_content_right_vr {
-  display: block;
-  color: rgba(250, 250, 250, 0.8);
-  font-size: 10px;
-  width: 1px;
+  border-right: 1px solid rgba(250, 250, 250, 0.8);
+  height: 5px;
 }
 .footer .content .footer_content_right2 {
   padding: 8px 0 8px 16px;

@@ -94,11 +94,6 @@
         }
     }
     &_content2{
-        &_myskills_heading{
-            margin:24px 0;
-            font-size:24px;
-            color:white;
-        }
         &_myskills{
             display:flex;
             flex-direction: row;
@@ -107,6 +102,12 @@
                 flex-direction: column;
                 padding:0 24px;
                 width:50%;
+                margin-top: 24px;
+                &_heading{
+                    margin-left: 24px;
+                    font-size:24px;
+                    color:white;
+                }
                 &_1, &_2, &_3{
                     color:white;
                     font-size: 16px;
@@ -132,6 +133,7 @@
                 flex-direction: column;
                 padding:0 24px;
                 width:50%;
+                margin-top: 60px;
                 
                 &_1, &_2, &_3{
                     color:white;

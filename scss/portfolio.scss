@@ -4,11 +4,12 @@
         font-size: 16px;
         margin:0 0 48px;
         color:rgb(221, 221, 221);
-        a:nth-child(0){
-            color:$btn_color;
-            text-decoration: underline;
-        }
+        
         a{
+            &:nth-child(1){
+                color:$btn_color;
+                text-decoration: underline;
+            }
             padding:9.6px 16px;
             &:hover{
                 cursor: pointer;
