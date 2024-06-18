@@ -742,9 +742,9 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 200px);
   grid-template-rows: repeat(5, 200px);
-  row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 .portfolio_main .wrap1 .portfolio_main_one_0 {
   display: block;
@@ -781,6 +781,14 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 0.2s;
+}
+.portfolio_main .wrap1 .portfolio_main_one_0:hover, .portfolio_main .wrap1 .portfolio_main_one_1:hover, .portfolio_main .wrap1 .portfolio_main_one_2:hover, .portfolio_main .wrap1 .portfolio_main_one_3:hover, .portfolio_main .wrap1 .portfolio_main_one_4:hover, .portfolio_main .wrap1 .portfolio_main_one_5:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.portfolio_main .wrap1 .portfolio_main_one_0:hover img, .portfolio_main .wrap1 .portfolio_main_one_1:hover img, .portfolio_main .wrap1 .portfolio_main_one_2:hover img, .portfolio_main .wrap1 .portfolio_main_one_3:hover img, .portfolio_main .wrap1 .portfolio_main_one_4:hover img, .portfolio_main .wrap1 .portfolio_main_one_5:hover img {
+  opacity: 0.3;
 }
 
 .footer {
