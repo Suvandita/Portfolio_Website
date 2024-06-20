@@ -24,8 +24,8 @@
             display: block;
             .portfolio_main_one{
                 display: grid;
-                grid-template-columns: repeat(5,200px);
-                grid-template-rows: repeat(5,200px);
+                grid-template-columns: repeat(5,auto);
+                grid-template-rows: repeat(5,auto);
                 row-gap: 20px;
                 column-gap: 20px;
                 &_0{

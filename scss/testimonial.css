@@ -1,0 +1,35 @@
+.cards {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  padding: 20px 0;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(17, 20, 24);
+  padding: 48px;
+  margin: 0 0 0 25px;
+  min-width: 50%;
+}
+.cards .card_details {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 24px;
+}
+.cards .card_details img {
+  height: 65px;
+  width: 65px;
+  border-radius: 200px;
+}
+.cards .card_details p {
+  color: white;
+  margin: 0 0 0 16px;
+}
+.cards .card_info {
+  color: white;
+  margin: 0 0 24px;
+}
+.cards .card_star {
+  color: gold;
+}/*# sourceMappingURL=testimonial.css.map */
