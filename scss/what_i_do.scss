@@ -1,27 +1,22 @@
 .what_i_do{
-    margin:0 12px;
     max-height:50%;
     &_content{
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         color:white;
-        margin-left: 48px;
-        margin-right: 48px;
+        margin:0 22px;
         .wrap{
             display: block;
             width:50%;
             .what_i_do_content_individual{
                 display: flex;
-                flex-direction: row;
-                padding:0 12px;
-                margin-bottom: 48px;
+                margin:0 12px 48px;
                 &_icon{
                     background-color: rgb(33, 37, 41);
                     border-radius: 5px;
                     height: 70px;
                     min-width: 70px;
-                    margin-right: 10px;
                     position: relative;
                     i{
                         color:$btn_color;
@@ -30,11 +25,11 @@
                     }
                 }
                 &_info{
-                    padding-left: 20px;
+                    padding:0 0 0 30px;
                     .sub-head{
                         color:white;
                         font-size: 20px;
-                        margin-bottom:16px;
+                        margin:0 0 16px 0;
                     }
                     .txt{
                         font-size: 16px;

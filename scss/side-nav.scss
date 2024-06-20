@@ -1,54 +1,57 @@
-
 .side-nav{
-    background-color: #111418 ;
+    background-color: rgb(17, 20, 24) ;
     color: white;
     @include flex_center(column);
-    padding: 16px 16px 8px;
-    position: fixed;
-    z-index: 1;
-    
-    height:726.4px;
-    width: 227px;
+    padding: 20px 20px;
+    position:fixed;
+    height: 100vh;
+    width: 260px;
+    overflow: auto;
+    scrollbar-width: none;
+    z-index: 2;
     &_img_wrap{
         @include flex_center(column);
-
         .side-nav_img{
-            margin-top:24px;
-            
             img{
-                border-radius: 200px;
+                border-radius: 50%;
                 border: 8px solid rgb(68, 67, 67);
-                height: 160px;
-                width: 160px;
-                
+                height:160px;
+                width:160px;
+                object-fit: fill;
             }
             margin-bottom: 4px;
-            padding: 8px;
         }
         .name{
-            font-size: 21px;
+            font-size: 19px;
+            width:100%;
             font-family: "Poppins",sans-serif;
+        }
+        &:hover{
+            cursor:pointer;
         }
         
     }
     
     &_link_wrap{
+        width: 100%;
         .side-nav_link{
-            padding:16px 0px;
-            margin:60.4px 0px;
+            margin:76px 0px;
             @include flex_center(column);
-
-            li a{
-                    display: block;
-                    padding:10px 0px;
-                    width: 259px;
-                    text-align: center;
-                    font-size: 16px;
-                    &:hover{
-                        color:$btn_color;
-                        cursor: pointer;
-                    }
-                }
+            &_li {
+                width:100%;
+                a{
+                     display: block;
+                     padding:10px 0px;
+                     text-align: center;
+                     font-size: 16px;
+                     @include flex_center(column);
+                     &:hover{
+                         color:$btn_color;
+                         cursor: pointer;
+                     }
+                 }
+            }
+                
                 
         }
         
@@ -56,38 +59,106 @@
     &_icon_wrapper{
         .side-nav_icon{
             @include flex_center(row);
-            justify-content: center;
-            li {
+            &_li {
                 @include tooltips();
                 a{   
-                        position: relative;
-                        display: block;
-                        height:26px;
-                        width:26px;
-                        margin: 2px 0 2px 4px;
-                        i{
-                            font-size: 14px;
-                            color: white;
-                            &:hover{
-                                color: $btn_color;
-                            }
+                    position: relative;
+                    height:26px;
+                    width:26px;
+                    @include flex_center(row);
+                    i{
+                        font-size: 14px;
+                        &:hover{
+                            color: $btn_color;
                         }
-
-             
                     }
+
+            
+                }
                 }
         }
     }
 }
 
+/*
 
-    ul{
-        list-style-type: none;
+.top-na{
+    background-color: black;
+    color:white;
+    &v{
+        position: relative;
+        &_left{
+            position: absolute;
+            left:0
+        }
+        &_right{
+            position: absolute;
+            right:0;
+            &_right1{
+                &_icon{
+                    position: relative;
+                    ul{
+                        @include flex_center(row);
+                        position: absolute;
+                        left:0;
+                        
+                        li {
+                            @include tooltips();
+                            
+                            a{   
+                                position: relative;
+                                display: block;
+                                height:26px;
+                                width:26px;
+                                margin: 2px 0 2px 0;
+                                i{
+                                    font-size: 14px;
+                                    color: white;
+                                    &:hover{
+                                        color: $btn_color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            &_right2{
+                &_button{
+                    &_link{
+                        display: block;
+                    }
+                }
+                &_link{
+                    display: none;
+                    background-color: black;
+                    color:white;
+                }
+        
+            }
+        }
     }
-    a{
-        text-decoration: none;
-        color: inherit;
+}
+    
+    
+    
+
+    
+
+
+@media screen and (max-width: 600px) {
+    .top-na{
+        display: block;
     }
-    
-    
-    
+    .side-nav{
+        display: none;
+    }
+
+    section{
+        margin-left: -260px;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+}
+    */

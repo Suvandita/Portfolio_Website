@@ -1,35 +1,35 @@
-
-.about_me{
-    
+.about_me{    
     color:white;
-
     &_content{
         display:flex;
         flex-wrap: wrap;
-
     }
     .intro{
-        width:60%;
-        height: 50%;
-        margin-bottom: 16px;
+        width:65%;
+        height:50%;
+        margin:0 0 16px 0;
         &_heading{
             font-size: 28px;
-            margin-bottom: 16px;
+            margin:0 0 16px 0;
         }
         &_para1,&_para2{
             font-size: 16px;
-            margin-bottom: 16px;
+            margin:0 0 16px 0;
         }
         
     }
     .info_wrap{
         width:30%;
         height: 50%;
-        padding-left:24px;
+        margin:0 0 0 30px;
         .info{
             padding: 12px 0;
+            &:nth-child(-n+3){
+                border-bottom: 1px dotted rgb(128, 128, 128,0.5);
+            }
             
         }
+    
         
     }
     .clr_txt{
@@ -39,22 +39,23 @@
         border:1px solid $btn_color;
         height: 70px;
         width: 160px;
-        border-radius:200px;
+        border-radius:50px;
         background-color:$btn_color;
-        margin:10px;
-        color: white;
+        color:white;
+        margin:16px 0 16px 0;
         &:hover{
             cursor:pointer;
         }
     }
     .stats{
         display:flex;
-        flex-direction: row;
         justify-content: space-evenly;
         width:100%;
         .stat{
-            border-right:1px dotted rgb(128, 128, 128,0.5);
-            padding: 20px 79px;
+            &:nth-child(-n+3){
+                border-right: 1px dotted rgb(128, 128, 128,0.5);
+            }
+            padding: 20px 80px;
             font-size: 16px;
             
             &_num{

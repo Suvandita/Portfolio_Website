@@ -1,21 +1,19 @@
-
 .resume{
     &_content1{
         display:flex;
-        flex-direction: row;
         &_myeducation{
             display: flex;
             flex-direction: column;
-            padding:0 24px;
+            margin:0 24px;
             &_heading{
                 color:white;
                 font-size: 24px;
-                margin-bottom: 24px;
+                margin:0 0 24px;
 
             }
             &1, &2, &3{
                 padding:24px;
-                margin-bottom: 24px;
+                margin:0 0 24px;
                 border-radius: 6px;
                 background-color: rgb(17, 20, 24);
                 &_year{
@@ -23,22 +21,21 @@
                     text-align: center;
 
                     display: inline-block;
-                    box-sizing: border-box;
 
                     background-color:rgb(220, 53, 69);
-                    padding: 4.9px 9.1px;
+                    padding: 5px 9px;
                     font-size: 14px;
                     border-radius:6px;
                 }
                 &_degree{
                     color:white;
                     font-size: 21px;
-                    margin-bottom: 8px;
+                    margin:0 0 8px;
                 }
                 &_university{
                     color:$btn_color;
                     font-size: 16px;
-                    margin-bottom: 16px;
+                    margin:0 0 16px;
                 }
                 &_info{
                     color:rgba(255, 255, 255, 0.5);
@@ -52,15 +49,15 @@
         &_myexperience{
             display: flex;
             flex-direction: column;
-            padding:0 24px;
+            margin:0 24px;
             &_heading{
                 color:white;
                 font-size: 24px;
-                margin-bottom: 24px;
+                margin:0 0 24px;
             }
             &1, &2, &3{
                 padding:24px;
-                margin-bottom: 24px;
+                margin:0 0 24px;
                 background-color: rgb(17, 20, 24);
                 border-radius:6px;
                 &_year{
@@ -69,21 +66,20 @@
                     background-color:rgb(220, 53, 69);
 
                     display: inline-block;
-                    box-sizing: border-box;
 
-                    padding: 4.9px 9.1px;
+                    padding: 5px 9px;
                     font-size: 14px;
                     border-radius:6px;
                 }
                 &_degree{
                     color:white;
                     font-size: 21px;
-                    margin-bottom: 8px;
+                    margin:0 0 8px;
                 }
                 &_university{
                     color:$btn_color;
                     font-size: 16px;
-                    margin-bottom: 16px;
+                    margin:0 0 16px;
                 }
                 &_info{
                     color:rgba(255, 255, 255, 0.5);
@@ -94,79 +90,84 @@
         }
     }
     &_content2{
-        &_myskills{
-            display:flex;
-            flex-direction: row;
-            &1{
+        &_myskill{
+            display: flex;
+            flex-direction: column;
+            margin: 24px;
+            &_heading{
+                font-size:24px;
+                color:white;
+                
+                
+            }
+            &s{
                 display:flex;
-                flex-direction: column;
-                padding:0 24px;
-                width:50%;
-                margin-top: 24px;
-                &_heading{
-                    margin-left: 24px;
-                    font-size:24px;
-                    color:white;
-                }
-                &_1, &_2, &_3{
-                    color:white;
-                    font-size: 16px;
-                    margin:24px;
-                    .slider_wrap{
-                        background-color: rgb(17, 20, 24);
-                        width:100%;
-                        height:8px;
-                        margin-bottom: 24px;
-                        .slider{
-                            background-color: $btn_color;
+                &1{
+                    display:flex;
+                    flex-direction: column;
+                    width:50%;
+                    margin: 0 24px 24px 0;
+                    
+                    &_1, &_2, &_3{
+                        color:white;
+                        font-size: 16px;
+                        margin:24px 24px 24px 0;
+                        .slider_wrap{
+                            background-color: rgb(17, 20, 24);
+                            width:100%;
                             height:8px;
-                            width:75%;
-                            
+                            margin:0 0 24px;
+                            .slider{
+                                background-color: $btn_color;
+                                height:8px;
+                                width:75%;
+                                
+                            }
+    
                         }
-
+                        
+                    }
+                }
+                &2{
+                    display:flex;
+                    flex-direction: column;
+                    width:50%;
+                    margin: 0 0 24px 24px;
+                    
+                    &_1, &_2, &_3{
+                        color:white;
+                        font-size: 16px;
+                        margin:24px 24px 24px 0;
+                        .slider_wrap{
+                            background-color: rgb(17, 20, 24);
+                            width:100%;
+                            height:8px;
+                            margin:0 0 24px;
+                            .slider{
+                                background-color: $btn_color;
+                                height:8px;
+                                width:75%;
+                                
+                            }
+    
+                        }
+                        
                     }
                     
                 }
             }
-            &2{
-                display:flex;
-                flex-direction: column;
-                padding:0 24px;
-                width:50%;
-                margin-top: 60px;
-                
-                &_1, &_2, &_3{
-                    color:white;
-                    font-size: 16px;
-                    margin:24px;
-                    .slider_wrap{
-                        background-color: rgb(17, 20, 24);
-                        width:100%;
-                        height:8px;
-                        margin-bottom: 24px;
-                        .slider{
-                            background-color: $btn_color;
-                            height:8px;
-                            width:75%;
-                            
-                        }
 
-                    }
-                    
-                }
-                
-            }
         }
+        
     }
     &_content3{
         width:100%;
         text-align: center;
         &_btn{
             border:1.6px solid rgb(108, 117, 125);
-            padding:12.8px 41.6px;
-            border-radius:800px;
+            padding:13px 42px;
+            border-radius:50px;
             background-color:rgb(0,0,0,0);
-            margin-top:48px;
             color: rgb(108, 117, 125);
             font-size:16px;
             &:hover{
