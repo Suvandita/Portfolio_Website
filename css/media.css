@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  section .content .heading_wrap .heading {
+    font-size: 80px;
+  }
+  section .content .heading_wrap .over_heading {
+    font-size: 25px;
+  }
+  section .content .heading_wrap .underline {
+    margin-top: 15px;
+  }
+}/*# sourceMappingURL=media.css.map */

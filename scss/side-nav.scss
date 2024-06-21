@@ -1,4 +1,5 @@
 .side-nav{
+    display: block;
     background-color: rgb(17, 20, 24) ;
     color: white;
     @include flex_center(column);
@@ -143,22 +144,18 @@
     
     
     
-
+*/
     
 
 
-@media screen and (max-width: 600px) {
-    .top-na{
-        display: block;
-    }
-    .side-nav{
+@media screen and (max-width: 1070px) {
+   .side-nav{
         display: none;
     }
 
-    section{
-        margin-left: -260px;
-        min-height: 100vh;
-        min-width: 100vw;
+    .pages{
+        margin-left: 0;
+        min-height: 100%;
+        max-width:100%;
     }
 }
-    */

@@ -32,4 +32,10 @@
 }
 .cards .card_star {
   color: gold;
+}
+
+@media screen and (max-width: 900px) {
+  .cards .card {
+    min-width: 100%;
+  }
 }/*# sourceMappingURL=testimonial.css.map */

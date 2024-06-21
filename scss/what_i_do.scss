@@ -40,3 +40,15 @@
         }
     }
 }
+@media screen and (max-width:900px) {
+    .what_i_do{
+        &_content{
+            flex-direction: column;
+            .wrap{
+                width: 100%;
+            }
+            
+        }
+    }
+    
+}

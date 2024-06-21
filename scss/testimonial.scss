@@ -33,4 +33,10 @@
         }
     }
 }
-       
+@media screen and (max-width:900px){
+    .cards{
+        .card{
+            min-width: 100%;
+        }
+    }
+}

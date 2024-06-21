@@ -106,7 +106,7 @@
                     display:flex;
                     flex-direction: column;
                     width:50%;
-                    margin: 0 24px 24px 0;
+                    margin: 0 24px 48px 0;
                     
                     &_1, &_2, &_3{
                         color:white;
@@ -132,7 +132,6 @@
                     display:flex;
                     flex-direction: column;
                     width:50%;
-                    margin: 0 0 24px 24px;
                     
                     &_1, &_2, &_3{
                         color:white;
@@ -170,6 +169,7 @@
             background-color:rgb(0,0,0,0);
             color: rgb(108, 117, 125);
             font-size:16px;
+            margin: 24px 0 0;
             &:hover{
                 cursor:pointer;
                 background-color:rgb(108, 117, 125);
@@ -178,3 +178,26 @@
         }
     }
 } 
+@media screen and (max-width:900px){
+    .resume{
+        &_content1{
+            flex-direction:column;
+        }
+        &_content2{
+            &_myskills{
+                flex-direction:column;
+                &1{
+                    margin-bottom: 0;
+                    width: 100%;
+                }
+                &2{
+                    width: 100%;
+                }
+            }
+        }
+        
+        
+
+    }
+        
+}
