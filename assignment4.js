@@ -1,7 +1,7 @@
-let button=document.getElementsByClassName("portfolio_nav_link");
+let button=document.querySelectorAll(".portfolio_nav_link");
 let card=document.querySelectorAll(".portfolio_main_one > div");
 
-
+/*
 for(let j=0;j<button.length;j++){
     button[j].addEventListener("click",function (){
         button[j].style.textDecoration="underline";
@@ -12,10 +12,26 @@ for(let j=0;j<button.length;j++){
                 button[k].style.color="white";
             }
         }
-
     })
-    
-}
+}*/
+
+button.forEach((j)=>{
+    j.addEventListener("click",function (){
+        j.style.textDecoration="underline";
+        j.style.color="rgb(32, 201, 151)";
+        button.forEach((k)=>{
+            if(k!=j){
+                k.style.textDecoration="none";
+                k.style.color="white";
+            }
+        })
+    })
+})
+
+
+
+
+
 
 
 button[0].addEventListener("click",function (){
@@ -57,3 +73,29 @@ button[3].addEventListener("click",function (){
     }
 })
 
+let nav_list=document.getElementsByClassName("top-nav_link")[0];
+let nav_button=document.getElementsByClassName("top-nav_right2_button")[0];
+let i=document.querySelector(".top-nav_right2_button i");
+nav_button.addEventListener("click", function (){
+    
+    if(i.className=="fa fa-bars"){
+        i.className="fa fa-times";
+        nav_list.style.display="block";
+    }
+    else if(i.className=="fa fa-times"){
+        i.className="fa fa-bars";
+        nav_list.style.display="none";
+    }
+
+    
+    
+})
+
+
+let nav_links=document.querySelectorAll(".top-nav_link li a");
+nav_links.forEach((link) => {link.addEventListener("click",function (){
+        nav_list.style.display="none";
+        i.className="fa fa-bars";
+
+    })}
+)

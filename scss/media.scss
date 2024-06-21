@@ -1,4 +1,4 @@
-@media screen and (max-width:600px) {
+@media screen and (max-width: 900px) and (min-width: 600px){
     section{
         .content{
             .heading_wrap{
@@ -10,6 +10,24 @@
                 }
                 .underline{
                     margin-top:15px;
+                }
+            }
+        }
+    }
+       
+}
+@media screen and (max-width:600px) {
+    section{
+        .content{
+            .heading_wrap{
+                .heading{
+                    font-size: 45px;
+                }
+                .over_heading{
+                    font-size: 20px;
+                }
+                .underline{
+                    margin-top:10px;
                 }
             }
         }

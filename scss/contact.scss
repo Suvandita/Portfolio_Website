@@ -21,7 +21,6 @@
                 p{
                     display: block;
                     font-size: 16px;
-                    color:$btn_color;
                     margin:0 0 16px;
                     span{
                         a {
@@ -54,7 +53,38 @@
                     @include flex_center(row);
                     position: absolute;
                     li {
-                        @include tooltips();
+                        .tooltip {
+                            position: relative;
+                            text-align: center;
+                          }
+                          .tooltip .tooltiptext {
+                            visibility: hidden;
+                            background-color: black;
+                            border-radius: 6px;
+                            padding: 5px;
+                            position: absolute;
+                            z-index: 1;
+                            bottom: 125%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            }
+                          }
+                          
+                          .tooltip .tooltiptext::after {
+                            content: "";
+                            position: absolute;
+                            top: 100%;
+                            right: 50%;
+                            border-width: 5px;
+                            border-style: solid;
+                            border-color:black transparent transparent transparent;
+                          }
+                          
+                          .tooltip:hover .tooltiptext {
+                            visibility: visible;
+                          }
+                        
+                        
                         a{   
                             position: relative;
                             height: 26px;
@@ -69,8 +99,8 @@
                         }
                     }
                 }
-            }
         }
+        
         &_note{
             display:flex;
             flex-direction: column;
@@ -138,7 +168,8 @@
         }
     }
 }
-@media screen and (max-width:900px){
+
+@media screen and (max-width:1070px){
     .contact{
         &_content{
             flex-direction: column;

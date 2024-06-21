@@ -186,73 +186,125 @@ a {
   color: rgb(32, 201, 151);
 }
 
-/*
-
-.top-na{
-    background-color: black;
-    color:white;
-    &v{
-        position: relative;
-        &_left{
-            position: absolute;
-            left:0
-        }
-        &_right{
-            position: absolute;
-            right:0;
-            &_right1{
-                &_icon{
-                    position: relative;
-                    ul{
-                        @include flex_center(row);
-                        position: absolute;
-                        left:0;
-
-                        li {
-                            @include tooltips();
-
-                            a{   
-                                position: relative;
-                                display: block;
-                                height:26px;
-                                width:26px;
-                                margin: 2px 0 2px 0;
-                                i{
-                                    font-size: 14px;
-                                    color: white;
-                                    &:hover{
-                                        color: $btn_color;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            &_right2{
-                &_button{
-                    &_link{
-                        display: block;
-                    }
-                }
-                &_link{
-                    display: none;
-                    background-color: black;
-                    color:white;
-                }
-
-            }
-        }
-    }
+.top-na {
+  display: none;
+  width: 100%;
+  height: 65px;
+  background-color: rgb(17, 20, 24);
+  color: white;
+  position: fixed;
+  z-index: 3;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 12px;
+}
+.top-nav_left {
+  font-size: 21px;
+}
+.top-nav_right {
+  display: flex;
+}
+.top-nav_right1_icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.top-nav_right1_icon li .tooltip {
+  position: relative;
+  text-align: center;
+}
+.top-nav_right1_icon li .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 3;
+  top: 100%;
+}
+.top-nav_right1_icon li .tooltip .tooltiptext::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.top-nav_right1_icon li .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.top-nav_right1_icon li a {
+  position: relative;
+  height: 26px;
+  width: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.top-nav_right1_icon li a i {
+  font-size: 14px;
+}
+.top-nav_right1_icon li a i:hover {
+  color: rgb(32, 201, 151);
+}
+.top-nav_right2_button {
+  height: 26px;
+  width: 26px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.top-nav_right2_button i {
+  font-size: 14px;
+  color: white;
+}
+.top-nav_right2_button :hover {
+  cursor: pointer;
+}
+.top-na .top-nav_link {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  width: 100%;
+  padding: 0 12px;
+  position: absolute;
+  z-index: 3;
+}
+.top-na .top-nav_link:hover {
+  cursor: pointer;
+}
+.top-na .top-nav_link li {
+  width: 100%;
+}
+.top-na .top-nav_link li a {
+  display: block;
+  padding: 10px 0px;
+  text-align: left;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.top-na .top-nav_link li a:hover {
+  color: rgb(32, 201, 151);
+  cursor: pointer;
 }
 
-
-
-*/
 @media screen and (max-width: 1070px) {
   .side-nav {
     display: none;
+  }
+  .top-na {
+    display: block;
   }
   .pages {
     margin-left: 0;
@@ -316,6 +368,17 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .home_layer_wrap_text_welcome {
+    font-size: 18px;
+  }
+  .home_layer_wrap_text_name {
+    font-size: 32px;
+  }
+  .home_layer_wrap_text_dest {
+    font-size: 11px;
+  }
+}
 .about_me {
   color: white;
 }
@@ -392,6 +455,7 @@ a {
   }
   .about_me .content .about_me_content .info_wrap {
     width: 100%;
+    text-align: left;
     margin: 0 auto;
   }
   .about_me .content .about_me_content .stat {
@@ -694,7 +758,6 @@ a {
 .contact_content_address_contacts p {
   display: block;
   font-size: 16px;
-  color: rgb(32, 201, 151);
   margin: 0 0 16px;
 }
 .contact_content_address_contacts p span a {
@@ -734,29 +797,31 @@ a {
   position: absolute;
   z-index: 1;
   bottom: 125%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.contact_content_address_icon ul li .tooltip .tooltiptext::after {
+.contact_content_address_icon ul .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  right: 50%;
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
 }
-.contact_content_address_icon ul li .tooltip:hover .tooltiptext {
+.contact_content_address_icon ul .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-.contact_content_address_icon ul li a {
+.contact_content_address_icon ul a {
   position: relative;
   height: 26px;
   margin-right: 5px;
 }
-.contact_content_address_icon ul li a i {
+.contact_content_address_icon ul a i {
   font-size: 14px;
   color: rgb(170, 177, 184);
 }
-.contact_content_address_icon ul li a i:hover {
+.contact_content_address_icon ul a i:hover {
   color: rgb(32, 201, 151);
 }
 .contact_content_note {
@@ -821,7 +886,7 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1070px) {
   .contact_content {
     flex-direction: column;
   }
@@ -958,7 +1023,7 @@ a {
          column-gap: 50px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) and (min-width: 600px) {
   section .content .heading_wrap .heading {
     font-size: 80px;
   }
@@ -967,5 +1032,16 @@ a {
   }
   section .content .heading_wrap .underline {
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  section .content .heading_wrap .heading {
+    font-size: 45px;
+  }
+  section .content .heading_wrap .over_heading {
+    font-size: 20px;
+  }
+  section .content .heading_wrap .underline {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=assignment4.css.map */

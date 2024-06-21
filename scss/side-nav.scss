@@ -81,76 +81,141 @@
     }
 }
 
-/*
 
 .top-na{
-    background-color: black;
+    display: none;
+    width:100%;
+    height: 65px;
+    background-color: rgb(17, 20, 24);
     color:white;
+    position: fixed;
+    z-index: 3;
+    
+
     &v{
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height: 100%;
+        padding: 0 12px;
         &_left{
-            position: absolute;
-            left:0
+            font-size: 21px;
         }
         &_right{
-            position: absolute;
-            right:0;
-            &_right1{
+            display: flex;
+            &1{
                 &_icon{
-                    position: relative;
-                    ul{
-                        @include flex_center(row);
-                        position: absolute;
-                        left:0;
-                        
-                        li {
-                            @include tooltips();
-                            
-                            a{   
-                                position: relative;
-                                display: block;
-                                height:26px;
-                                width:26px;
-                                margin: 2px 0 2px 0;
-                                i{
-                                    font-size: 14px;
-                                    color: white;
-                                    &:hover{
-                                        color: $btn_color;
-                                    }
+                    @include flex_center(row);
+                    li {
+                        .tooltip {
+                            position: relative;
+                            text-align: center;
+                          }
+                          .tooltip .tooltiptext {
+                            visibility: hidden;
+                            background-color: black;
+                            border-radius: 6px;
+                            padding: 5px;
+                            position: absolute;
+                            z-index:3 ;
+                            top:100%;
+                          }
+                          
+                          .tooltip .tooltiptext::before {
+                            content: "";
+                            position: absolute;
+                            bottom: 100%;
+                            left: 50%;
+                            border-width: 5px;
+                            border-style: solid;
+                            border-color: transparent transparent black transparent;
+                          }
+                          
+                          .tooltip:hover .tooltiptext {
+                            visibility: visible;
+                          }
+                        a{   
+                            position: relative;
+                            height:26px;
+                            width:26px;
+                            @include flex_center(row);
+                            i{
+                                font-size: 14px;
+                                &:hover{
+                                    color: $btn_color;
                                 }
                             }
+        
+                    
                         }
                     }
                 }
             }
             
-            &_right2{
+            &2{
                 &_button{
-                    &_link{
-                        display: block;
+                    height: 26px;
+                    width:26px;
+                    @include flex_center(row);
+
+                    i{
+                        font-size: 14px;
+                        color:white;
+                    }
+                    :hover{
+                        cursor: pointer;
                     }
                 }
-                &_link{
-                    display: none;
-                    background-color: black;
-                    color:white;
-                }
-        
+                
+                
             }
         }
+    }
+    .top-nav_link{
+        display: none;
+        background-color: rgb(0, 0, 0,0.9);
+        color:white;
+        width:100%;
+        padding: 0 12px;
+        position:absolute;
+        z-index: 3;
+        &:hover{
+            cursor: pointer;
+        }
+        li {
+            width:100%;
+            a{
+                 display: block;
+                 padding:10px 0px;
+                 text-align: left;
+                 font-size: 16px;
+                 border-bottom:1px solid white; 
+                 display: flex;
+                 flex-direction: column;
+                 &:hover{
+                     color:$btn_color;
+                     cursor: pointer;
+                 }
+             }
+        }
+
+        
     }
 }
     
     
     
-*/
+
     
 
 
 @media screen and (max-width: 1070px) {
    .side-nav{
         display: none;
+    }
+    .top-na{
+        display: block;
     }
 
     .pages{

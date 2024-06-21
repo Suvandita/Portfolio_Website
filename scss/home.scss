@@ -58,3 +58,20 @@
         }
     } 
 }
+@media screen and (max-width:900px){
+    .home_layer_wrap_text{
+        &_welcome{
+            font-size: 18px;
+            
+        }
+    
+        &_name{
+            font-size: 32px;
+        }
+    
+        &_dest{
+            font-size: 11px;
+        }
+    }
+    
+}
