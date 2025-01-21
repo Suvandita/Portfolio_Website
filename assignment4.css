@@ -468,6 +468,52 @@ a {
     font-size: 15px;
   }
 }
+@media screen and (max-width: 700px) {
+  .about_me_content .stats {
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    /*
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 50%;
+        left: 0;
+        border-bottom: 1px dotted rgba(250, 250, 250, 0.15);
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        border-left: 1px dotted rgba(250, 250, 250, 0.15);
+    }*/
+  }
+  .about_me_content .stats .stat:nth-child(n) {
+    border-right: none;
+    width: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .about_me_content .stats .stat:nth-child(1) {
+    border-bottom: 1px dotted rgba(128, 128, 128, 0.5);
+    border-right: 1px dotted rgba(128, 128, 128, 0.5);
+  }
+  .about_me_content .stats .stat:nth-child(4) {
+    border-top: 1px dotted rgba(128, 128, 128, 0.5);
+    border-left: 1px dotted rgba(128, 128, 128, 0.5);
+    margin: -1px 0 0 -1px;
+  }
+}
 .what_i_do {
   max-height: 50%;
 }
@@ -708,7 +754,7 @@ a {
 }
 .cards .card_details {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   margin: 0 0 24px;
 }
 .cards .card_details img {
@@ -725,6 +771,8 @@ a {
   margin: 0 0 24px;
 }
 .cards .card_star {
+  display: flex;
+  gap: 5px;
   color: gold;
 }
 
@@ -780,10 +828,8 @@ a {
 .contact_content_address_icon ul {
   margin-bottom: 10px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  position: absolute;
+  gap: 10px;
 }
 .contact_content_address_icon ul li .tooltip {
   position: relative;
@@ -796,7 +842,7 @@ a {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  bottom: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -815,7 +861,6 @@ a {
 .contact_content_address_icon ul a {
   position: relative;
   height: 26px;
-  margin-right: 5px;
 }
 .contact_content_address_icon ul a i {
   font-size: 14px;

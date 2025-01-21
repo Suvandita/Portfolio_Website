@@ -12,7 +12,7 @@
         min-width: 50%;
         &_details{
             display:flex;
-            flex-direction: row;
+            align-items: center;
             margin:0 0 24px;
             img{
                 height: 65px;
@@ -29,6 +29,8 @@
             margin:0 0 24px;
         }
         &_star{
+            display: flex;
+            gap:5px;
             color:gold;
         }
     }
