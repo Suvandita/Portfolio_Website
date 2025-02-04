@@ -99,10 +99,10 @@ a {
 .side-nav_img_wrap .side-nav_img img {
   border-radius: 50%;
   border: 8px solid rgb(68, 67, 67);
-  height: 160px;
-  width: 160px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  height: 150px;
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .side-nav_img_wrap .name {
   font-size: 19px;
@@ -116,7 +116,7 @@ a {
   width: 100%;
 }
 .side-nav_link_wrap .side-nav_link {
-  margin: 76px 0px;
+  margin: 25px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,6 +300,19 @@ a {
 }
 
 @media screen and (max-width: 1070px) {
+  .side-nav {
+    display: none;
+  }
+  .top-na {
+    display: block;
+  }
+  .pages {
+    margin-left: 0;
+    min-height: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-height: 600px) {
   .side-nav {
     display: none;
   }
@@ -786,7 +799,7 @@ a {
   color: white;
 }
 .contact_content_address {
-  width: 25%;
+  width: 40%;
   display: flex;
   padding: 0 17px;
   margin: 48px 0 0;
@@ -797,7 +810,7 @@ a {
   margin: 0 0 24px;
 }
 .contact_content_address_info {
-  font-size: 16px;
+  font-size: 15px;
   margin: 0 0 24px;
 }
 .contact_content_address_contacts {
@@ -805,14 +818,14 @@ a {
 }
 .contact_content_address_contacts p {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   margin: 0 0 16px;
 }
 .contact_content_address_contacts p span a {
   margin: 0 8px 0 0;
 }
 .contact_content_address_contacts p span a i {
-  font-size: 18px;
+  font-size: 15px;
   color: rgb(32, 201, 151);
 }
 .contact_content_address_contacts p span a i:hover {
@@ -895,6 +908,7 @@ a {
   border-radius: 6px;
   width: 100%;
   border: none;
+  color: white;
 }
 .contact_content_note_input1_email {
   width: 50%;
@@ -905,6 +919,7 @@ a {
   border-radius: 6px;
   border: none;
   width: 100%;
+  color: white;
 }
 .contact_content_note_input2 {
   width: 100%;
@@ -917,6 +932,8 @@ a {
   border-radius: 6px;
   width: 100%;
   height: 100%;
+  resize: none;
+  color: white;
 }
 .contact_content_note_input3_send {
   margin: 24px auto 0;
@@ -926,6 +943,7 @@ a {
   background-color: rgb(32, 201, 151);
   color: white;
   font-size: 16px;
+  color: white;
 }
 .contact_content_note_input3_send:hover {
   cursor: pointer;

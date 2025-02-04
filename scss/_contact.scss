@@ -3,7 +3,7 @@
         display:flex;
         color:white;
         &_address{
-            width: 25%;
+            width: 40%;
             display:flex;
             padding:0 17px;
             margin:48px 0 0;
@@ -13,20 +13,20 @@
                 margin:0 0 24px;
             }
             &_info{
-                font-size: 16px;
+                font-size: 15px;
                 margin:0 0 24px;
             }
             &_contacts{
                 margin:0 0 24px;
                 p{
                     display: block;
-                    font-size: 16px;
+                    font-size: 15px;
                     margin:0 0 16px;
                     span{
                         a {
                             margin: 0 8px 0 0;
                             i{
-                                font-size: 18px;
+                                font-size: 15px;
                                 color:$btn_color;
                                 
                                 &:hover{
@@ -125,6 +125,7 @@
                         border-radius: 6px;
                         width: 100%;
                         border:none;
+                        color:white;
                     }
 
                 }
@@ -136,6 +137,7 @@
                         border-radius: 6px;
                         border:none;
                         width: 100%;
+                        color:white;
                     }
                 }
             }
@@ -150,6 +152,8 @@
                     border-radius: 6px;
                     width:100%;
                     height:100%;
+                    resize:none;
+                    color:white;
                 }
             }
             &_input3_send{
@@ -164,6 +168,7 @@
                 &:hover{
                     cursor:pointer;
                 }
+                color:white;
             }
         }
     }
