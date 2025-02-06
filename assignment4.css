@@ -542,6 +542,7 @@ a {
 }
 .what_i_do_content .wrap .what_i_do_content_individual {
   display: flex;
+  align-items: center;
   margin: 0 12px 48px;
 }
 .what_i_do_content .wrap .what_i_do_content_individual_icon {
@@ -550,6 +551,9 @@ a {
   height: 70px;
   min-width: 70px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .what_i_do_content .wrap .what_i_do_content_individual_icon i {
   color: #31e8e7;
@@ -561,15 +565,13 @@ a {
 }
 .what_i_do_content .wrap .what_i_do_content_individual_info {
   padding: 0 0 0 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .what_i_do_content .wrap .what_i_do_content_individual_info .sub-head {
   color: white;
   font-size: 20px;
-  margin: 0 0 16px 0;
-}
-.what_i_do_content .wrap .what_i_do_content_individual_info .txt {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 @media screen and (max-width: 900px) {
