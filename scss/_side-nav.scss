@@ -1,5 +1,7 @@
 .side-nav{
     display: block;
+   
+   //background-color:#212529;
     background-color: rgb(17, 20, 24) ;
     color: white;
     @include flex_center(column);
@@ -15,7 +17,7 @@
         .side-nav_img{
             img{
                 border-radius: 50%;
-                border: 8px solid rgb(68, 67, 67);
+                border: 8px solid rgb(76, 77, 77);;
                 height:150px;
                 width:150px;
                 object-fit:cover;

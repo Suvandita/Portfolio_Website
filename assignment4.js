@@ -1,3 +1,35 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const textElement = document.querySelector(".home_layer_wrap_text_name");
+    const text = "I am Suvandita Swaroop";
+    let index = 0;
+    let isDeleting = false;
+
+    function typeWriter() {
+        if (!isDeleting && index < text.length) {
+            textElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100);
+        } else if (isDeleting && index > 0) {
+            textElement.innerHTML = text.substring(0, index - 1);
+            index--;
+            setTimeout(typeWriter, 100);
+        } else {
+            setTimeout(() => {
+                isDeleting = !isDeleting;
+                typeWriter();
+            }, 100);
+        }
+    }
+
+    typeWriter();
+});
+
+
+
+
+
+
+
 let button=document.querySelectorAll(".portfolio_nav_link");
 let card=document.querySelectorAll(".portfolio_main_one > div");
 
