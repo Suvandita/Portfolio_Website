@@ -26,7 +26,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+window.onscroll = function () {
+    let backToTopButton = document.getElementById("backtotop");
 
+    if (window.scrollY > 5) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("backToTop").style.display = "none";
+});
 
 
 

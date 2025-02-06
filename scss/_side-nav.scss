@@ -1,7 +1,5 @@
 .side-nav{
     display: block;
-   
-   //background-color:#212529;
     background-color: rgb(17, 20, 24) ;
     color: white;
     @include flex_center(column);
