@@ -1,11 +1,11 @@
 .portfolio{
-    &_nav{
+    /*&_nav{
         @include flex_center(row);
         font-size: 16px;
         margin:0 0 48px;
         color:rgb(221, 221, 221);
         
-        a{
+       /* a{
             &:nth-child(1){
                 color:$btn_color;
                 text-decoration: underline;
@@ -16,7 +16,7 @@
                 color:$btn_color;
             }
         }
-    }
+    }*/
     
 
     &_main{
@@ -28,50 +28,51 @@
                 grid-template-rows: repeat(5,auto);
                 row-gap: 20px;
                 column-gap: 20px;
-                &_0{
-                    display:block;
+                &_0 {
+                    display: block;
+                    grid-column: 1 / span 3;
+                    grid-row: 1 / span 2;     
+                }
+                &_1 {
+                    display: block;
+                    grid-column: 4 / span 2;
+                    grid-row: 1 / span 2;     
+                }
+                &_2 {
+                    display: block;
                     grid-column: 1 / span 2;
-                    grid-row: 1 / span 3;
-                }
-                &_1{
-                    display:block;
-                    grid-column: 3 / span 2;
-                    grid-row: 1 / span 2;
-                }
-                &_2{
-                    display:block;
-                    grid-column: 5 / span 1;
-                    grid-row: 1 / span 3;
-                }
-                &_3{
-                    display:block;
-                    grid-column: 3 / span 2;
                     grid-row: 3 / span 2;
                 }
-                &_4{
-                    display:block;
-                    grid-column: 1 / span 2;
-                    grid-row: 4 / span 2;
-                }
-                &_5{
-                    display:block;
+                &_3 {
+                    display: block;
                     grid-column: 3 / span 3;
-                    grid-row: 5 / span 1;
+                    grid-row: 3 / span 2;
                 }
-                &_0,&_1,&_2,&_3,&_4,&_5{
+                &_4 {
+                    display: block;
+                    grid-column: 1 / span 5;
+                    grid-row: 5 / span 2;
+                }
+                
+                
+                
+                
+                &_0,&_1,&_2,&_3,&_4{
+                    border: 5px solid rgb(17, 20, 24);
                     img{
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
+                        object-fit: fit;
                         
                     }
                     &:hover{
-
-                        transform: scale(1.05);
-                        opacity: 1;
+                        cursor: pointer;
+                        overflow: hidden;
                         img{
-                            opacity: 0.3;
+                            transform: scale(1.05);
+                            opacity: 0.5;
                         }
+                        
                     }
                     
                 }

@@ -4,6 +4,7 @@
         &_myeducation{
             display: flex;
             flex-direction: column;
+            width: 50%;
             margin:0 24px;
             &_heading{
                 color:white;
@@ -12,6 +13,7 @@
 
             }
             &1, &2, &3{
+                height: 100%;
                 padding:24px;
                 margin:0 0 24px;
                 border-radius: 6px;
@@ -33,12 +35,13 @@
                     margin:0 0 8px;
                 }
                 &_university{
-                    color:$btn_color;
+                    color:rgba(255, 255, 255, 0.5);
+                    
                     font-size: 16px;
                     margin:0 0 16px;
                 }
                 &_info{
-                    color:rgba(255, 255, 255, 0.5);
+                    color:$btn_color;
                     font-size: 16px;
                 }
             }
@@ -47,6 +50,7 @@
         }
 
         &_myexperience{
+            width: 50%;
             display: flex;
             flex-direction: column;
             margin:0 24px;
@@ -81,15 +85,22 @@
                     font-size: 16px;
                     margin:0 0 16px;
                 }
+                
                 &_info{
                     color:rgba(255, 255, 255, 0.5);
                     font-size: 16px;
+                    .link{
+                        &:hover{
+                            color:$btn_color;
+                        }
+                    }
                 }
+
             }
 
         }
     }
-    &_content2{
+    /*&_content2{
         &_myskill{
             display: flex;
             flex-direction: column;
@@ -158,7 +169,7 @@
 
         }
         
-    }
+    }*/
     &_content3{
         width:100%;
         text-align: center;
