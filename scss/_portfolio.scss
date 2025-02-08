@@ -81,4 +81,13 @@
         }
 
     }
+    &_click{
+        font-size: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: $btn_color;
+        margin-top: 10px;
+        
+    }
 }

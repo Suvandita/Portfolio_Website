@@ -1,16 +1,31 @@
-.cards{
-    display:flex;
-    overflow-x: scroll;
-    scrollbar-width: none;
-    .card{
+.content{
+    .cards{
         display:flex;
-        flex-direction:column;
-        background-color: rgb(17, 20, 24);
-        padding: 10px;
-        margin:0 0 0 10px;
-        width: 50%;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        .card{
+            display:flex;
+            flex-direction:column;
+            background-color: rgb(17, 20, 24);
+            padding: 10px;
+            margin:0 0 0 10px;
+            width: 50%;
+            
+        }
     }
+    &_swipe{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        margin-top: 20px;
+        color: $btn_color;
+    }
+
 }
+
+   
+
 @media screen and (max-width:900px){
     .cards{
         .card{

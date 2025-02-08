@@ -100,76 +100,7 @@
 
         }
     }
-    /*&_content2{
-        &_myskill{
-            display: flex;
-            flex-direction: column;
-            margin: 24px;
-            &_heading{
-                font-size:24px;
-                color:white;
-                
-                
-            }
-            &s{
-                display:flex;
-                &1{
-                    display:flex;
-                    flex-direction: column;
-                    width:50%;
-                    margin: 0 24px 48px 0;
-                    
-                    &_1, &_2, &_3{
-                        color:white;
-                        font-size: 16px;
-                        margin:24px 24px 24px 0;
-                        .slider_wrap{
-                            background-color: rgb(17, 20, 24);
-                            width:100%;
-                            height:8px;
-                            margin:0 0 24px;
-                            .slider{
-                                background-color: $btn_color;
-                                height:8px;
-                                width:75%;
-                                
-                            }
-    
-                        }
-                        
-                    }
-                }
-                &2{
-                    display:flex;
-                    flex-direction: column;
-                    width:50%;
-                    
-                    &_1, &_2, &_3{
-                        color:white;
-                        font-size: 16px;
-                        margin:24px 24px 24px 0;
-                        .slider_wrap{
-                            background-color: rgb(17, 20, 24);
-                            width:100%;
-                            height:8px;
-                            margin:0 0 24px;
-                            .slider{
-                                background-color: $btn_color;
-                                height:8px;
-                                width:75%;
-                                
-                            }
-    
-                        }
-                        
-                    }
-                    
-                }
-            }
-
-        }
-        
-    }*/
+   
     &_content3{
         width:100%;
         text-align: center;
@@ -193,19 +124,14 @@
     .resume{
         &_content1{
             flex-direction:column;
-        }
-        &_content2{
-            &_myskills{
-                flex-direction:column;
-                &1{
-                    margin-bottom: 0;
-                    width: 100%;
-                }
-                &2{
-                    width: 100%;
-                }
+            &_myeducation{
+                width: 100%;
+            }
+            &_myexperience{
+                width:100%;
             }
         }
+       
         
         
 
