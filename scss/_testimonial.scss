@@ -1,7 +1,7 @@
 .cards{
     display:flex;
-    //overflow-x: scroll;
-    //scrollbar-width: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
     .card{
         display:flex;
         flex-direction:column;

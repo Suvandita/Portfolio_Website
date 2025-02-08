@@ -185,6 +185,12 @@ a {
 .side-nav_icon_wrapper .side-nav_icon_li a i:hover {
   color: #31e8e7;
 }
+.side-nav_icon_wrapper .side-nav_icon_li a .imageLC {
+  font-size: 14px;
+}
+.side-nav_icon_wrapper .side-nav_icon_li a .imageLC:hover {
+  border: 1px solid #31e8e7;
+}
 
 .top-na {
   display: none;
@@ -254,6 +260,12 @@ a {
 }
 .top-nav_right1_icon li a i:hover {
   color: #31e8e7;
+}
+.top-nav_right1_icon li a .imageLC {
+  font-size: 14px;
+}
+.top-nav_right1_icon li a .imageLC:hover {
+  border: 1px solid #31e8e7;
 }
 .top-nav_right2_button {
   height: 26px;
@@ -777,6 +789,8 @@ a {
 }
 .cards {
   display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 .cards .card {
   display: flex;

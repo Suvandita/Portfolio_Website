@@ -73,6 +73,12 @@
                             color: $btn_color;
                         }
                     }
+                    .imageLC{
+                        font-size: 14px;
+                        &:hover{
+                            border:1px solid $btn_color;
+                        }
+                    }
 
             
                 }
@@ -144,6 +150,12 @@
                                 font-size: 14px;
                                 &:hover{
                                     color: $btn_color;
+                                }
+                            }
+                            .imageLC{
+                                font-size: 14px;
+                                &:hover{
+                                    border:1px solid $btn_color;
                                 }
                             }
         
