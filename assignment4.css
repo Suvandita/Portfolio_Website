@@ -684,6 +684,7 @@ a {
 @media screen and (max-width: 900px) {
   .resume_content1 {
     flex-direction: column;
+    align-items: center;
   }
   .resume_content1_myeducation {
     width: 100%;
