@@ -31,6 +31,16 @@ new Typed("#typed", {
     backSpeed: 25,
     loop: true
   });
+ function closeNote() {
+    const note = document.getElementById("splineNote");
+    note.style.opacity = "0";
+    note.style.transform = "translateY(-10px)";
+    setTimeout(() => {
+      note.style.display = "none";
+    }, 300);
+  }
+
+
 
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

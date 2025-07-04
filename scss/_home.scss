@@ -10,6 +10,7 @@
         object-fit: fit;
     }
     
+    
     &_layer{
         //background-color: rgba(21, 21, 21, 0.7);
         width: 100%;
@@ -33,6 +34,8 @@
                 &_name{
                     font-size: 52px;
                     margin:0 0 16px 0;
+                    position: absolute;
+                    z-index: 1;
                 }
 
                 &_dest{
@@ -56,8 +59,50 @@
                 }
             }            
         }
-    } 
+        &_spline{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        }
+        &_spline-note {
+        position: relative;
+        z-index: 2;
+        font-size: 12px;
+        background-color: white;
+        color: black;
+        padding: 10px 10px;
+        border-left: 4px solid black;
+        margin: 10px 0;
+        border-radius: 0.5rem;
+        font-family: 'Segoe UI', sans-serif;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color:black;
+        cursor: pointer;
+        transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+        color: black;
+        }
+
+    }
+
+   
 }
+
+
+
+
 @media screen and (max-width:900px){
     .home_layer_wrap_text{
         &_welcome{
