@@ -37,13 +37,15 @@
     }
     .btn_cv{
         border:1px solid $btn_color;
+        font-size:  16px;
+        color:$btn_color;
         height: 70px;
         width: 160px;
         border-radius:50px;
-        background-color:$btn_color;
-        color:white;
-        margin:16px 0 16px 0;
+        background-color: rgba(21, 21, 21, 0.0);
         &:hover{
+            background-color:$btn_color;
+            color: white;
             cursor:pointer;
         }
     }

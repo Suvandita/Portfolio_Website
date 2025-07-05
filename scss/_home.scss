@@ -34,8 +34,7 @@
                 &_name{
                     font-size: 52px;
                     margin:0 0 16px 0;
-                    position: absolute;
-                    z-index: 1;
+                    
                 }
 
                 &_dest{
@@ -43,20 +42,6 @@
                     margin:0 0 16px 0;
                 }
 
-                &_btn{
-                    border:1px solid $btn_color;
-                    font-size:  16px;
-                    color:$btn_color;
-                    height: 70px;
-                    width: 160px;
-                    border-radius:50px;
-                    background-color: rgba(21, 21, 21, 0.0);
-                    &:hover{
-                        background-color:$btn_color;
-                        color: white;
-                        cursor:pointer;
-                    }
-                }
             }            
         }
         &_spline{

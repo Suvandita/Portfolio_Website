@@ -372,26 +372,10 @@ a {
 .home_layer_wrap_text_name {
   font-size: 52px;
   margin: 0 0 16px 0;
-  position: absolute;
-  z-index: 1;
 }
 .home_layer_wrap_text_dest {
   font-size: 21px;
   margin: 0 0 16px 0;
-}
-.home_layer_wrap_text_btn {
-  border: 1px solid #31e8e7;
-  font-size: 16px;
-  color: #31e8e7;
-  height: 70px;
-  width: 160px;
-  border-radius: 50px;
-  background-color: rgba(21, 21, 21, 0);
-}
-.home_layer_wrap_text_btn:hover {
-  background-color: #31e8e7;
-  color: white;
-  cursor: pointer;
 }
 .home_layer_spline {
   width: 100%;
@@ -474,14 +458,16 @@ a {
 }
 .about_me .btn_cv {
   border: 1px solid #31e8e7;
+  font-size: 16px;
+  color: #31e8e7;
   height: 70px;
   width: 160px;
   border-radius: 50px;
-  background-color: #31e8e7;
-  color: white;
-  margin: 16px 0 16px 0;
+  background-color: rgba(21, 21, 21, 0);
 }
 .about_me .btn_cv:hover {
+  background-color: #31e8e7;
+  color: white;
   cursor: pointer;
 }
 .about_me .stats {
